@@ -1,0 +1,20 @@
+# git and github files
+
+.git
+
+.github
+
+README.md
+
+.gitignore
+
+# Dockerfiles
+
+Dockerfile.dev
+
+containers/nginx/build/Dockerfile.prod
+
+docker-compose.yaml
+# Code editor
+
+.vscode

@@ -1,0 +1,79 @@
+.pdv-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.pdv-map-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 950px;
+}
+
+.pdv-h2{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.pdv-txt-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.pdv-txt-h3{
+    font-family: 'poppins';
+    font-size: 16px;
+}
+.pdv-txt-p, .pdv-map-p{
+    font-family: 'poppins';
+    font-size: 16px;
+    color : #333333;
+}
+
+.pdvMail{
+    color: #333333;
+    margin-left: 5px;
+}
+
+@media (max-width: 950px) {
+    .pdv-map-container{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: start;
+        width: 80%;
+    }
+
+    .pdv-txt-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .pdv-map-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pdv-h2{
+        font-family: 'poppins';
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,109 @@
+.pdvsoon-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdvsoon-bleu{
+    background-color: #121628;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pdvsoon-liposome{
+    position: absolute;
+}
+
+
+.pdvsoon-map{
+    background-image: url('../../images//general/map2.png');
+    z-index: -5;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.pdvsoon-title{
+    font-family: 'poppins';
+    color: white;
+    margin: 0;
+    font-size: 65px;
+    width: 100%;
+    font-weight: bold;
+    text-align: start;
+}
+
+.pdvsoon-countdown-h2{
+    font-family: 'poppins';
+    margin: 0;
+    color: white;
+    font-size: 65px;
+}
+
+.pdvsoon-countdown-h3{
+    margin: 0;
+    font-family: 'poppins';
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.countdown{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.countdown-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+}
+
+@media (max-width: 1900px) {
+    .pdvsoon-liposome {
+        width: 240px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pdvsoon-liposome {
+        width: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .pdvsoon-container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter {
+        position: absolute;
+        height: 50%;
+        width: 110%;
+    }
+}

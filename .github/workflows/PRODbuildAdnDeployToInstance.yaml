@@ -1,0 +1,58 @@
+name: PROD - build and deploy on test EC2 instance
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: "PROD - Deploy to production"
+    runs-on: ubuntu-latest
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+      BUILD_VERSION: "BUILD_VERSION=1.${{ github.run_number }}"
+      REPO_NAME: ${{ vars.REPO_NAME }}
+      ENV_FILE: ${{ secrets.ENV_FILE }}
+      SSH_USER: ${{ secrets.PROD_SSH_USER }}
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/production.key
+          chmod 600 ~/.ssh/production.key
+          cat >>~/.ssh/config <<END
+          Host production
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/production.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_KEY: ${{ secrets.PROD_SSH_KEY }}
+          SSH_HOST: ${{ secrets.PROD_SSH_HOST }}
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Get the last source
+        run: ssh production "git clone git@molecules:PharmaNature/-ARCHIVE-molecules-lab-test.git $REPO_NAME"
+
+      - name: Put the env file
+        run: |
+          echo "$ENV_FILE" > ~/env
+          echo "$BUILD_VERSION" >> ~/env
+          scp ~/env production:/home/$SSH_USER/$REPO_NAME/.env
+      
+      - name: Stop the working container
+        run: ssh production "cd $REPO_NAME && sudo docker compose down || true"
+
+      - name: Build image and run container out of the mill 
+        run: ssh production "cd $REPO_NAME && sudo docker compose --env-file .env up --build -d"
+
+      - name: Remove old directory
+        if: always()
+        run: ssh production "sudo rm -rf $REPO_NAME || true"
+
+      - name: Prune docker builder 
+        if: always()
+        run: ssh production "sudo docker builder prune -f || true"
+        
