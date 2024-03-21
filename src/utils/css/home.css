@@ -80,7 +80,7 @@ Link {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121628;
+    background-color: #CE886D;
     color: white;
     flex-direction: column;
     width: 100vw;
@@ -128,11 +128,12 @@ Link {
 .title-expert-content {
     font-size: 30px;
     margin: 0;
+    font-weight: 400;
     font-family: 'poppins';
     color: #111426;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-bottom: 24px;
+    width: 480px;
 }
 
 .text-expert-content {
@@ -141,12 +142,13 @@ Link {
     font-family: 'poppins';
     color: #6D6869;
     line-height: 25.6px;
-    padding-bottom: 80px;
+    margin-top: 25px;
     text-align: justify;
 }
 
 .button-expert-content {
     position: relative;
+    margin-top: 40px;
     color: #121628;
     font-family: Poppins;
     font-size: 16px;
@@ -155,7 +157,13 @@ Link {
     line-height: normal;
     text-transform: uppercase;
     text-decoration: none;
-    text-decoration-color: #121628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ECB794;
+    width: 252px;
+    height: 56px;
+    border-radius: 50px;
 }
 
 .button-expert-content-bis {
@@ -171,15 +179,6 @@ Link {
     text-decoration-color: #121628;
 }
 
-.button-expert-content::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 207px;
-    height: 2px;
-    background: #121628;
-}
 
 .img-expert {
     width: 45vw;

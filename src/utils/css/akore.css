@@ -1,0 +1,49 @@
+/* AKORE */
+.home-imgIntro{
+    width: 100%;
+    height: auto;
+}
+.home-div-onImage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 718px;
+}
+
+.home-title-bold{
+    font-family: 'Poppins', sans-serif;
+    color: #111426;
+    font-size: 64px;
+    font-weight: 600;
+    margin: 0;
+}
+.home-title{
+    font-family: 'Poppins', sans-serif;
+    color: #111426;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+    
+}
+.home-p-bold{
+    font-family: 'Poppins', sans-serif;
+    color: #111426;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    
+}
+.home-p{
+    font-family: 'Poppins', sans-serif;
+    color: #111426;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    
+}
+.line-bold{
+    width: 86px;
+    height: 8px;
+    background-color: #111426;
+}
