@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import ListProduct from '../composants/ListProduct';
 import '../utils/css/home.css';
+import '../utils/css/akore.css'
 import imgArticulation from '../images/home/molecules-articulation.png';
 import imgSommeil from '../images/home/molecules-sommeil.png';
 import imgRespiratoires from '../images/home/molecules-voies-respiratoires.png';
 import imgStress from '../images/home/molecules-anti-stress.png';
-import imgIntro from '../images/home/intro-img.png';
-import imgExpert from '../images/home/expert-img.png';
+import imgIntro from '../images/AKORE-img/Home/femme-desert.jpg';
 import imgAvantages from '../images/home/avantage-img.png';
 import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
@@ -15,6 +15,9 @@ import videoMolecule from '../videos/vod.mp4'
 import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
 import { Link } from 'react-router-dom';
+
+import drop from '../images/AKORE-img/Home/serum-drop_357492857.png'
+import hyaluronic from '../images/AKORE-img/Home/serum-HYALURONIC-ACID.png'
 
 export default function Home() {
     const [showChat, setShowChat] = useState(false);
@@ -25,20 +28,20 @@ export default function Home() {
     });
     const [notificationBarStyle, setNotificationBarStyle] = useState({});
 
-  useEffect(() => {
-    setWindowSize({width: window.innerWidth, height: window.innerHeight,})
-    if (windowSize.height < 700) {
-      setNotificationBarStyle({
-        bottom: showChat ? '560px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
-      });
-    } else {
-      setNotificationBarStyle({
-        bottom: showChat ? '722px' : '20px',
-        cursor: showChat ? 'default' : 'pointer',
-      });
-    }
-  }, [windowSize.height, showChat]);
+    useEffect(() => {
+        setWindowSize({ width: window.innerWidth, height: window.innerHeight, })
+        if (windowSize.height < 700) {
+            setNotificationBarStyle({
+                bottom: showChat ? '560px' : '20px',
+                cursor: showChat ? 'default' : 'pointer',
+            });
+        } else {
+            setNotificationBarStyle({
+                bottom: showChat ? '722px' : '20px',
+                cursor: showChat ? 'default' : 'pointer',
+            });
+        }
+    }, [windowSize.height, showChat]);
 
 
     const handleNotificationClick = () => {
@@ -64,35 +67,32 @@ export default function Home() {
     return (
         <div className='container-home'>
             <div className='container-intro-home'>
-                <img src={imgIntro} alt='femme' className='img-intro-home' />
-                <div className='container-intro-title-text'>
-                    <h1 className='title-intro-home'>la technologie <br />liposomale</h1>
-                    <p className='text-intro-home'>La révolution dans <br />le domaine de la nutraceutique</p>
-                    <div className='rectangle'></div>
+                <img src={imgIntro} alt='femme' className='home-imgIntro' />
+                <div className='home-div-onImage'>
+                    <h1 className='home-title-bold'>NIOSOMAL</h1>
+                    <h1 className='home-title'>TECHNOLOGY</h1>
+                    <div className='line-bold'></div>
+                    <p className='home-p-bold'>The revolution in cosmetics</p>
+                    <p className='home-p'>Your best choice for maximum assimilation of active ingredients</p>
                 </div>
             </div>
             <div className='container-text-intro-background'>
-                <p className='text-intro-background'>Molecules est une marque exclusive née d'une collaboration entre un laboratoire R&D et le spécialiste mondial du liposome.</p>
-                <p className='title-intro-background'>« Proposer des produits innovants avec une biodisponibilité maximisée pour une efficacité ciblée et profonde assurée »</p>
+                <p className='text-intro-background'>Offering innovative products with bioavailability </p>
+                <p className='text-intro-background'>Maximized for Efficiency focused and deep assured</p>
             </div>
             <div className='container-content-global-home'>
                 <div className='container-expert-content'>
+                    <img className='img-expert' alt='expert' src={drop} />
                     <div className='container-text-expert-content'>
-                        <h2 className='title-expert-content'>L'expert du liposome</h2>
-                        <p className='text-expert-content'>Notre technologie liposomale dernière génération représente une avancée majeure dans le domaine de la nutraceutique faisant l’objet de nombreuses études scientifiques. Cette
-                            technique innovante permet une action plus efficace, ciblée et profonde des principes actifs
-                            dans l’organisme, en les encapsulant dans des liposomes.
-
-                            Molecules développe ses formules grâce à cette nouvelle technologie exclusive pour
-                            encapsuler 100% de ses actifs. Ce procédé garantit une assimilation optimale des nutriments
-                            par l’organisme et la stabilité des actifs pour une action rapide.
-                            Nos formules sont idéales dans un programme en phase d’attaque afin d’agir rapidement et
-                            en profondeur dans les cellules.</p>
+                        <h2 className='title-expert-content'>innovation and efficacity
+                            at the heart of cosmetics </h2>
+                        <p className='text-expert-content'>At Akore Formulations, we’re revolutionizing the world of cosmetics through innovation and scientific expertise. We use niosome technology to push back the boundaries of cosmetic efficacy.
+                        </p>
+                        <p className='text-expert-content'>Compared to traditional cosmetic formulations, niosome-based cosmetics offer numerous advantages, delivering active ingredients into the skin’s deepest layers for rapid, long-lasting action.</p>
                         <Link to='/produits' className='button-expert-content'>
-                            Découvrir nos produits
+                            Discover our products
                         </Link>
                     </div>
-                    <img className='img-expert' alt='expert' src={imgExpert} />
                 </div>
                 <div className='container-liposome-advantage'>
                     <img className='img-liposome-advantag' alt='avantages' src={imgAvantages} />
