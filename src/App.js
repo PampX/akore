@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
-import ReactGA from 'react-ga4'; // Assurez-vous d'utiliser react-ga4 si vous utilisez GA4
+import ReactGA from 'react-ga4';
 import Home from './views/Home';
 import Produits from './views/Produits';
 import PDVsoon from './views/PDVsoon';
