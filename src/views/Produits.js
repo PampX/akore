@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import '../utils/css/produits.css';
 import closePopUp from '../images/home/close-popUp.png';
-import { Link, useNavigate } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components'
-import { fadeIn } from 'react-animations'
-import NotificationBar from '../composants/NotificationBar'
-import ChatBot from '../composants/ChatBot'
+import {Link, useNavigate} from 'react-router-dom';
+import styled, {keyframes} from 'styled-components'
+import {fadeIn} from 'react-animations'
 
 const FadeIn = styled.div`animation: 1s ${keyframes`${fadeIn}`}`;
 
@@ -46,43 +44,6 @@ export default function Produits() {
     const [openProduct, setOpenProduct] = useState(null);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const [showChat, setShowChat] = useState(false);
-    const [hasNotification, setHasNotification] = useState(true);
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    });
-    const [notificationBarStyle, setNotificationBarStyle] = useState({});
-
-    useEffect(() => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight, })
-        if (windowSize.height < 700) {
-            setNotificationBarStyle({
-                bottom: showChat ? '560px' : '20px',
-                cursor: showChat ? 'default' : 'pointer',
-            });
-        } else {
-            setNotificationBarStyle({
-                bottom: showChat ? '722px' : '20px',
-                cursor: showChat ? 'default' : 'pointer',
-            });
-        }
-    }, [windowSize.height, showChat]);
-
-
-    const handleNotificationClick = () => {
-        setShowChat(true);
-    };
-
-    const handleCloseChat = () => {
-        setShowChat(false);
-        setHasNotification(false)
-    };
-
-    const handleNewMessage = () => {
-        setHasNotification(true);
-    };
-
     useEffect(() => {
         function handleResize() {
             setWindowWidth(window.innerWidth);
@@ -118,7 +79,8 @@ export default function Produits() {
                             className={`container-one-product ${activeProductIndex === index ? "show-extra-text" : ""}`}
                             onClick={() => handleClick(index, product)}
                         >
-                            <img className='img-product-pres' src={images[product.key]} alt={product.name} />
+                            <img className='img-product-pres' src={images[product.key]} alt={product.name}/>
+                            <p className='text-product-product'>{product.name}</p>
                             <p className='text-product-product'>{product.name}</p>
                             {activeProductIndex === index && (
                                 <FadeIn>
@@ -144,12 +106,6 @@ export default function Produits() {
                         )}
                     </React.Fragment>
                 ))}
-            </div>
-            <div className="app">
-                <div>
-                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
-                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
-                </div>
             </div>
         </div>
     );

@@ -9,6 +9,7 @@ import FicheProduit from './views/FicheProduit';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
 import { getInfosProduit } from './utils/produits/infosProduits';
+import ChatBotNotifBar from "./composants/ChatBotNotifBar";
 
 // Initialisez votre ID de mesure GA4
 ReactGA.initialize('G-F61DD3NBNP');
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="produits/sommeil" element={<FicheProduit data={infosProduits['sommeil']} />} />
         <Route path='*' element={<Navigate to="/" />} />
       </Routes>
+      <ChatBotNotifBar/>
       <Footer />
     </Router>
   );

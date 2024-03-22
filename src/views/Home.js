@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import ListProduct from '../composants/ListProduct';
 import '../utils/css/home.css';
 import '../utils/css/akore.css'
@@ -12,51 +11,11 @@ import imgAvantages2 from '../images/home/avantage-img2.png';
 import imgPhopholipide from '../images/home/phospholipide-img.png';
 import imgPhopholipide2 from '../images/home/phospholipide-img2.png';
 import videoMolecule from '../videos/vod.mp4'
-import NotificationBar from '../composants/NotificationBar'
-import ChatBot from '../composants/ChatBot'
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import drop from '../images/AKORE-img/Home/serum-drop_357492857.png'
-import hyaluronic from '../images/AKORE-img/Home/serum-HYALURONIC-ACID.png'
 
 export default function Home() {
-    const [showChat, setShowChat] = useState(false);
-    const [hasNotification, setHasNotification] = useState(true);
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    });
-    const [notificationBarStyle, setNotificationBarStyle] = useState({});
-
-    useEffect(() => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight, })
-        if (windowSize.height < 700) {
-            setNotificationBarStyle({
-                bottom: showChat ? '560px' : '20px',
-                cursor: showChat ? 'default' : 'pointer',
-            });
-        } else {
-            setNotificationBarStyle({
-                bottom: showChat ? '722px' : '20px',
-                cursor: showChat ? 'default' : 'pointer',
-            });
-        }
-    }, [windowSize.height, showChat]);
-
-
-    const handleNotificationClick = () => {
-        setShowChat(true);
-    };
-
-    const handleCloseChat = () => {
-        setShowChat(false);
-        setHasNotification(false)
-    };
-
-    const handleNewMessage = () => {
-        setHasNotification(true);
-    };
-
     const jsonProduct = [
         { name: "ARTICULATION", description: "Santé des articulations et mobilité", url: imgArticulation },
         { name: "SOMMEIL", description: "Relaxation", url: imgSommeil },
@@ -160,12 +119,6 @@ export default function Home() {
                     <Link to='/produits' className='button-expert-content-bis'>
                         Voir nos produits
                     </Link>
-                </div>
-            </div>
-            <div className="app">
-                <div>
-                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
-                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
                 </div>
             </div>
         </div>
