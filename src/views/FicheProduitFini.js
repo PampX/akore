@@ -23,7 +23,7 @@ import MenuInfos from '../composants/MenuInfos'
 import ListProduct from '../composants/ListProduct';
 
 
-export default function FicheProduit({ data }) {
+export default function FicheProduitFini({ data }) {
     const navigate = useNavigate()
     const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })

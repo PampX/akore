@@ -1,25 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../utils/css/produits.css';
 import ProduitCard from "../composants/ProduitCard";
-
-const finishedProducts = [
-    {name: "eye contours", key: "eye", shortDesc: "Caffeine 10% + EGCG", imgName: "serum-MP--GLYCOLIC-ACID.png"},
-    {name: "blemish-control", key: "blemish", shortDesc: "Glycolic Acid 10% + Bakuchiol 1%", imgName: "serum-GLYCOLIC-ACID.png"},
-    {name: "glow", key: "glow", shortDesc: "Vitamin C 15% + Hyaluronic Acid 1%", imgName: "serum-VITAMINE-C.png"},
-    {name: "deep hydratation", key: "hydratation", shortDesc: "Hyaluronic Acid 3% + B5 2 %", imgName: "serum-HYALURONIC-ACID.png"},
-    {name: "even-complexion", key: "complexion", shortDesc: "Niacinamide 10 % + Zinc PCA 1%", imgName: "serum-NIACINAMIDE.png"},
-];
-
-const rawProducts = [
-    {name: "glycolic acid", key: "glycolic", shortDesc: "Exfoliating", imgName: "serum-MP--GLYCOLIC-ACID.png"},
-    {name: "hyaluronic acid", key: "hyaluronic", shortDesc: "Hydration & Anti-aging", imgName: "serum-MP--HYALURONIC-ACID.png"},
-    {name: "bakuchiol", key: "bakuchiol", shortDesc: "Blemish-control", imgName: "serum-MP--BAKUCHIOL.png"},
-    {name: "caffeine", key: "caffeine", shortDesc: "Eye contours", imgName: "serum-MP--CAFFEINE.png"},
-    {name: "EGCG", key: "EGCG", shortDesc: "Glow & Anti-aging", imgName: "serum-MP--EGCG.png"},
-    {name: "niacinamide", key: "niacinamide", shortDesc: "Hyaluronic Acid 3% + B5 2 %", imgName: "serum-MP--NIACINAMIDE.png"},
-    {name: "vitamin C", key: "vitamin", shortDesc: "Blemish-control", imgName: "serum-MP--VITAMIN-C.png"},
-    {name: "zinc", key: "zinc", shortDesc: "Healing & soothing", imgName: "serum-MP--ZINC.png"},
-];
+import {getFinishedProducts, getRawProducts} from "../utils/produits/produitsInfos";
 
 export default function Produits() {
     const [, setWindowWidth] = useState(window.innerWidth);
@@ -42,7 +24,7 @@ export default function Produits() {
                         <p className='small-text text'>A selection of finished</p>
                         <p className='small-text text'>liposomal products </p>
                     </div>
-                    {finishedProducts.map((product, index) => (
+                    {getFinishedProducts().map((product, index) => (
                         <div className='item_in_product-category'>
                             <ProduitCard
                                 key={index}
@@ -59,7 +41,7 @@ export default function Produits() {
                         <p className='small-text text'>A selection of raw</p>
                         <p className='small-text text'>liposomal materials </p>
                     </div>
-                    {rawProducts.map((product, index) => (
+                    {getRawProducts().map((product, index) => (
                         <div className='item_in_product-category'>
                             <ProduitCard
                                 key={index}
