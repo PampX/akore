@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import '../utils/css/produits.css';
+import React, {useState, useEffect} from 'react';
 import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
 
@@ -16,7 +15,7 @@ export default function ChatBotNotifBar() {
 
 
     useEffect(() => {
-        setWindowSize({ width: window.innerWidth, height: window.innerHeight, })
+        setWindowSize({width: window.innerWidth, height: window.innerHeight,})
         if (windowSize.height < 700) {
             setNotificationBarStyle({
                 bottom: showChat ? '560px' : '20px',
@@ -45,12 +44,11 @@ export default function ChatBotNotifBar() {
     };
 
     return (
-        <div className='container-all'>
-            <div className="app">
-                <div>
-                    <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
-                    {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
-                </div>
+        <div className="app">
+            <div>
+                <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat}
+                                 onClick={handleNotificationClick} style={notificationBarStyle}/>
+                {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage}/>}
             </div>
         </div>
     );
