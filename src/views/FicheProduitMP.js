@@ -20,7 +20,7 @@ import ChatBot from '../composants/ChatBot'
 
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
-import ListProduct from '../composants/ListProduct';
+import ListProduct from '../composants/produits/ListProduct';
 
 
 export default function FicheProduitMP({ data }) {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ListProduct from '../composants/ListProduct';
+import ListProduct from '../composants/produits/ListProduct';
 import '../utils/css/home.css';
 import '../utils/css/akore.css'
 import imgArticulation from '../images/home/molecules-articulation.png';

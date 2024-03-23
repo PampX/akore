@@ -1,15 +1,15 @@
-import '../utils/css/produitCard.css';
+import '../../utils/css/produitCard.css';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 export default function ProduitCard({name, shortDesc, imgName, productKey, isRowProduct}) {
     const navigate = useNavigate();
-    const image = require('../images/AKORE WEBSITE/PRODUITS/' + imgName)
+    const image = require('../../images/AKORE WEBSITE/PRODUITS/' + imgName)
     const handleClick = () => {
         if (isRowProduct){
-            return navigate("matiere_premiere/detail/"+productKey);
+            return navigate(`/matiere_premiere/detail/${productKey}`);
         }else {
-            return navigate("produit_fini/detail/"+productKey);
+            return navigate(`/produit_fini/detail/${productKey}`);
         }
     };
 

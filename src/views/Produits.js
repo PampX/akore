@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import '../utils/css/produits.css';
-import ProduitCard from "../composants/ProduitCard";
+import ProduitCard from "../composants/produits/ProduitCard";
 import {getFinishedProducts, getRawProducts} from "../utils/produits/produitsInfos";
 
 export default function Produits() {
