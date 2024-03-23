@@ -43,6 +43,10 @@
 
 /* version telephone */
 @media (max-width: 441px) {
+    .container-product-all {
+        margin: 0 3%;
+    }
+
     .container-product-category {
         margin-bottom: 20%;
     }

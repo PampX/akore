@@ -1,10 +1,24 @@
 .container-one-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10% 0;
 }
 
-.container-one-product:hover {
+/* two next sections are used for the image slide effet on hover*/
+.container-one-product img {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.container-one-product:hover img{
     cursor: pointer;
-    padding-bottom: 10%;
+    top: -10px;
+}
+
+.container-one-product:hover{
+    cursor: pointer;
 }
 
 .img-product-pres {
@@ -27,4 +41,11 @@
     text-align: center;
     color: #6D6869;
     margin: 0;
+}
+
+/* version telephone */
+@media (max-width: 441px) {
+    .img-product-pres {
+        height: auto;
+    }
 }
