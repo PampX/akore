@@ -8,12 +8,7 @@
 }
 
 .container-product-all {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 100px;
+
 }
 
 @media screen and (max-width: 1366px) {
