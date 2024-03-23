@@ -2,37 +2,23 @@ import React, {useEffect, useState} from 'react';
 import '../utils/css/produits.css';
 import ProduitCard from "../composants/ProduitCard";
 
-const images = {
-    articulation: require('../images/home/molecules-articulation.png'),
-    sommeil: require('../images/home/molecules-sommeil.png'),
-    respiratoires: require('../images/home/molecules-voies-respiratoires.png'),
-    stress: require('../images/home/molecules-anti-stress.png'),
-    multi: require('../images/home/molecules-multivit-mineraux.png'),
-    circulation: require('../images/home/molecules-circulation.png'),
-    detox: require('../images/home/molecules-detoxl.png'),
-    capillaire: require('../images/home/molecules-capillaire.png'),
-    jetLag: require('../images/home/molecules-jet-lag.png'),
-    minceur: require('../images/home/molecules-minceur.png'),
-    energie: require('../images/home/molecules-energie.png'),
-    immunite: require('../images/home/molecules-immunite.png'),
-};
-
 const finishedProducts = [
-    { name: "articulation", key: "articulation", desc: "Améliore la mobilité", desc2: "Confort articulaire · Flexibilité", path: "/articulation", shortDesc: "Blemish-control", imgName: "molecules-articulation.png" },
-    { name: "sommeil", key: "sommeil", desc: "Réduit le temps d'endormissement", desc2: "Sommeil réparateur · Relaxation · Endormissement", path: "/sommeil", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "voies respiratoires", key: "respiratoires", desc: "Respiration facilitée", desc2: "Système immunitaire & respiratoire · Vitalité", path: "/voies-respiratoires", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "anti-stress", key: "stress", desc: "Résistance physique & mentale", desc2: "Sérénité · Détente · Energie · Performance", path: "/anti-stress", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "multivitamines", key: "multi", desc: "Réduit la fatigue", desc2: "Système immunitaire · Equilibre hormonal & nerveux · Performance", path: "/multivitamines-et-mineraux", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "circulation", key: "circulation", desc: "Jambes légères", desc2: "Circulation veineuse · Lymphatique · Antioxydant · Vasoprotecteur", path: "/circulation", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
+    {name: "eye contours", key: "eye", shortDesc: "Caffeine 10% + EGCG", imgName: "serum-MP--GLYCOLIC-ACID.png"},
+    {name: "blemish-control", key: "blemish", shortDesc: "Glycolic Acid 10% + Bakuchiol 1%", imgName: "serum-GLYCOLIC-ACID.png"},
+    {name: "glow", key: "glow", shortDesc: "Vitamin C 15% + Hyaluronic Acid 1%", imgName: "serum-VITAMINE-C.png"},
+    {name: "deep hydratation", key: "hydratation", shortDesc: "Hyaluronic Acid 3% + B5 2 %", imgName: "serum-HYALURONIC-ACID.png"},
+    {name: "even-complexion", key: "complexion", shortDesc: "Niacinamide 10 % + Zinc PCA 1%", imgName: "serum-NIACINAMIDE.png"},
 ];
 
 const rawProducts = [
-    { name: "détox", key: "detox", desc: "Favorise la digestion", desc2: "Détox du foie · Digestion · Purification", path: "/detox", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "capillaire", key: "capillaire", desc: "Croissance & force", desc2: "Beauté & croissance des cheveux · Anti-chute · Pigmentation", path: "/capillaire", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "jet lag", key: "jetLag", desc: "Décalage horaire", desc2: "Décalage horaire · Rapidité endormissement · Régulation du cycle circadien", path: "/jet-lag", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "minceur", key: "minceur", desc: "Aide à augmenter la dépense énergétique", desc2: "Brûle-graisses · Perte de poids · Digestion", path: "/minceur", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "énergie", key: "energie", desc: "Résistance à la fatigue mentale & physique", desc2: "Dynamisant · Equilibre énergétique · Système nerveux", path: "/energie", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
-    { name: "immunité", key: "immunite", desc: "Système immunitaire préservé", desc2: "Système immunitaire · Protection stress oxydatif · Métabolisme · Vitalité", path: "/immunite", shortDesc: "Blemish-control", imgName: "molecules-articulation.png"  },
+    {name: "glycolic acid", key: "glycolic", shortDesc: "Exfoliating", imgName: "serum-MP--GLYCOLIC-ACID.png"},
+    {name: "hyaluronic acid", key: "hyaluronic", shortDesc: "Hydration & Anti-aging", imgName: "serum-MP--HYALURONIC-ACID.png"},
+    {name: "bakuchiol", key: "bakuchiol", shortDesc: "Blemish-control", imgName: "serum-MP--BAKUCHIOL.png"},
+    {name: "caffeine", key: "caffeine", shortDesc: "Eye contours", imgName: "serum-MP--CAFFEINE.png"},
+    {name: "EGCG", key: "EGCG", shortDesc: "Glow & Anti-aging", imgName: "serum-MP--EGCG.png"},
+    {name: "niacinamide", key: "niacinamide", shortDesc: "Hyaluronic Acid 3% + B5 2 %", imgName: "serum-MP--NIACINAMIDE.png"},
+    {name: "vitamin C", key: "vitamin", shortDesc: "Blemish-control", imgName: "serum-MP--VITAMIN-C.png"},
+    {name: "zinc", key: "zinc", shortDesc: "Healing & soothing", imgName: "serum-MP--ZINC.png"},
 ];
 
 export default function Produits() {
@@ -50,17 +36,40 @@ export default function Produits() {
     return (
         <div className='container-all'>
             <div className='container-product-all'>
-                {rawProducts.map((product, index) => (
-                        <ProduitCard
-                            key={index}
-                            name={product.name}
-                            shortDesc={product.shortDesc}
-                            desc={product.desc}
-                            desc2={product.desc2}
-                            path={product.path}
-                            imgName={product.imgName}
-                        />
-                ))}
+                <div className='container-product-category'>
+                    <div className='item_in_product-category text_in_product_category'>
+                        <h2 className='text'> FINISHED PRODUCTS </h2>
+                        <p className='small-text text'>A selection of finished</p>
+                        <p className='small-text text'>liposomal products </p>
+                    </div>
+                    {finishedProducts.map((product, index) => (
+                        <div className='item_in_product-category'>
+                            <ProduitCard
+                                key={index}
+                                name={product.name}
+                                shortDesc={product.shortDesc}
+                                imgName={product.imgName}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div className='container-product-category'>
+                    <div className='item_in_product-category text_in_product_category'>
+                        <h2 className='text'> RAW MATERIAL </h2>
+                        <p className='small-text text'>A selection of raw</p>
+                        <p className='small-text text'>liposomal materials </p>
+                    </div>
+                    {rawProducts.map((product, index) => (
+                        <div className='item_in_product-category'>
+                            <ProduitCard
+                                key={index}
+                                name={product.name}
+                                shortDesc={product.shortDesc}
+                                imgName={product.imgName}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
