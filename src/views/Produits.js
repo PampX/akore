@@ -25,12 +25,13 @@ export default function Produits() {
                         <p className='small-text text'>liposomal products </p>
                     </div>
                     {getFinishedProducts().map((product, index) => (
-                        <div className='item_in_product-category'>
+                        <div key={index} className='item_in_product-category'>
                             <ProduitCard
-                                key={index}
                                 name={product.name}
                                 shortDesc={product.shortDesc}
                                 imgName={product.imgName}
+                                productKey={product.key}
+                                isRowProduct={false}
                             />
                         </div>
                     ))}
@@ -42,12 +43,13 @@ export default function Produits() {
                         <p className='small-text text'>liposomal materials </p>
                     </div>
                     {getRawProducts().map((product, index) => (
-                        <div className='item_in_product-category'>
+                        <div key={index} className='item_in_product-category'>
                             <ProduitCard
-                                key={index}
                                 name={product.name}
                                 shortDesc={product.shortDesc}
                                 imgName={product.imgName}
+                                productKey={product.key}
+                                isRowProduct={true}
                             />
                         </div>
                     ))}

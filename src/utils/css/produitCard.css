@@ -2,6 +2,11 @@
     margin: 10% 0;
 }
 
+.container-one-product:hover {
+    cursor: pointer;
+    padding-bottom: 10%;
+}
+
 .img-product-pres {
     max-width: 100%;
     height: 330px;
