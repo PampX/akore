@@ -40,3 +40,20 @@
     color: #6D6869;
     padding: 0;
 }
+
+/* version telephone */
+@media (max-width: 441px) {
+    .container-product-category {
+        margin-bottom: 20%;
+    }
+
+    /*only 2 items per row on phone version*/
+    .item_in_product-category {
+        flex-basis: 50%;
+    }
+
+    /*text take a whole line on phone version*/
+    .text_in_product_category {
+        flex-basis: 100%;
+    }
+}
