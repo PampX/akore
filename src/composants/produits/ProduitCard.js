@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function ProduitCard({name, shortDesc, imgName, productKey, isRowProduct}) {
     const navigate = useNavigate();
-    const image = require('../../images/AKORE WEBSITE/PRODUITS/' + imgName)
+    const image = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const handleClick = () => {
         if (isRowProduct){
             return navigate(`/matiere_premiere/detail/${productKey}`);
