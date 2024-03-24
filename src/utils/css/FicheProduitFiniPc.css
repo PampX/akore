@@ -1,12 +1,4 @@
-#description-block {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-#right-block {
-    width: 900px;
-}
+/*general classes*/
 
 .text {
     font-family: 'poppins';
@@ -52,4 +44,16 @@
 .check-mark {
     font-size: xx-large;
     margin: 0;
+}
+
+/* description block special css rules */
+
+#description-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+#right-block {
+    width: 900px;
 }
