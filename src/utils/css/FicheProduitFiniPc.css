@@ -20,7 +20,13 @@
 
 .logo-and-image {
     display: flex;
+    align-items: center;
     margin: 2% 0;
+}
+
+.logo-and-image img {
+    max-height: 40px;
+    margin-right: 1%;
 }
 
 .pargraph {
@@ -55,5 +61,5 @@
 }
 
 #right-block {
-    width: 900px;
+    max-width: 900px;
 }

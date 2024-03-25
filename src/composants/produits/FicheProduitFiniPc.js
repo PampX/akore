@@ -1,6 +1,7 @@
 import '../../utils/css/FicheProduitFiniPc.css'
 export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
     const image = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
+    const pipetteImage = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
     return (
         <div className='container'>
             <div id='description-block'>
@@ -9,7 +10,7 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                     <h1 className='text title'> {completeName} </h1>
                     <p className='text brown-text underligned'> {shortDesc} </p>
                     <div className='logo-and-image'>
-                        <img src={"logo"} alt={"logo pipette"}/>
+                        <img src={pipetteImage} alt={"logo pipette"}/>
                         <p className='text brown-text'>1 floz</p>
                     </div>
                     {paragraphsDescList.map((descParagraph, index) => { return (
