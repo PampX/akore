@@ -1,0 +1,51 @@
+.container-one-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0;
+}
+
+/* two next sections are used for the image slide effet on hover*/
+.container-one-product img {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.container-one-product:hover img{
+    cursor: pointer;
+    top: -20px;
+}
+
+.container-one-product:hover{
+    cursor: pointer;
+}
+
+.img-product-pres {
+    max-width: 100%;
+    height: 330px;
+}
+
+.text-product-product {
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #1B1C3C;
+    margin: 0;
+}
+
+.product-shortdesc {
+    font-family: 'poppins';
+    font-size: 13px;
+    text-align: center;
+    color: #6D6869;
+    margin: 0;
+}
+
+/* version telephone */
+@media (max-width: 441px) {
+    .img-product-pres {
+        height: auto;
+    }
+}

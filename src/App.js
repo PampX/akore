@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'r
 import ReactGA from 'react-ga4';
 import Home from './views/Home';
 import Produits from './views/Produits';
-import PDVsoon from './views/PDVsoon';
 import PDV from './views/PDV';
-import FicheProduit from './views/FicheProduit';
+import FicheProduitFini from './views/FicheProduitFini';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
-import { getInfosProduit } from './utils/produits/infosProduits';
+import ChatBotNotifBar from "./composants/ChatBotNotifBar";
+import FicheProduitMP from "./views/FicheProduitMP";
 
 // Initialisez votre ID de mesure GA4
 ReactGA.initialize('G-F61DD3NBNP');
@@ -25,7 +25,6 @@ function RouteChangeTracker() {
 }
 export default function App() {
 
-  const infosProduits = getInfosProduit()
   return (
     <Router>
       <RouteChangeTracker />
@@ -33,21 +32,12 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/points-de-vente' element={<PDV />} />
-        <Route path='produits' element={<Produits />} />
-        <Route path="produits/articulation" element={<FicheProduit data={infosProduits['articulation']} />} />
-        <Route path="produits/anti-stress" element={<FicheProduit data={infosProduits['anti-stress']} />} />
-        <Route path="produits/capillaire" element={<FicheProduit data={infosProduits['capillaire']} />} />
-        <Route path="produits/detox" element={<FicheProduit data={infosProduits['detox']} />} />
-        <Route path="produits/energie" element={<FicheProduit data={infosProduits['energie']} />} />
-        <Route path="produits/minceur" element={<FicheProduit data={infosProduits['minceur']} />} />
-        <Route path="produits/jet-lag" element={<FicheProduit data={infosProduits['jet-lag']} />} />
-        <Route path="produits/multivitamines-et-mineraux" element={<FicheProduit data={infosProduits['multivitamines-mineraux']} />} />
-        <Route path="produits/immunite" element={<FicheProduit data={infosProduits['immunite']} />} />
-        <Route path="produits/circulation" element={<FicheProduit data={infosProduits['circulation']} />} />
-        <Route path="produits/voies-respiratoires" element={<FicheProduit data={infosProduits['voies-respiratoires']} />} />
-        <Route path="produits/sommeil" element={<FicheProduit data={infosProduits['sommeil']} />} />
+        <Route path='/produits' element={<Produits />} />
+        <Route path="/produit_fini/detail/:productKey" element={<FicheProduitFini />} />
+        <Route path="/matiere_premiere/detail/:productKey" element={<FicheProduitMP />} />
         <Route path='*' element={<Navigate to="/" />} />
       </Routes>
+      <ChatBotNotifBar/>
       <Footer />
     </Router>
   );

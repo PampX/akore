@@ -20,10 +20,10 @@ import ChatBot from '../composants/ChatBot'
 
 import ListeIngredients from '../composants/ListeIngredients'
 import MenuInfos from '../composants/MenuInfos'
-import ListProduct from '../composants/ListProduct';
+import ListProduct from '../composants/produits/ListProduct';
 
 
-export default function FicheProduit({ data }) {
+export default function FicheProduitMP({ data }) {
     const navigate = useNavigate()
     const location = useLocation();
     const isPhone = useMediaQuery({ query: '(max-width: 750px)' })

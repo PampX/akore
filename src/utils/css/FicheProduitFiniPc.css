@@ -1,0 +1,65 @@
+/*general classes*/
+
+.text {
+    font-family: 'poppins';
+    color: #474748;
+    margin: 0;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.brown-text {
+    color: #CE886D;
+}
+
+.underligned {
+    border-bottom: 1px solid #ADB5BD;
+}
+
+.logo-and-image {
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.logo-and-image img {
+    max-height: 40px;
+    margin-right: 1%;
+}
+
+.pargraph {
+    margin-top: 2%;
+}
+
+.checkbox-square {
+    background: #F9F9F9;
+    max-width: 550px;
+    border-radius: 3%;
+    margin-top: 4%;
+    padding: 2% 0;
+}
+
+.check-line {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.check-mark {
+    font-size: xx-large;
+    margin: 0;
+}
+
+/* description block special css rules */
+
+#description-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+#right-block {
+    max-width: 900px;
+}
