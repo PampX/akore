@@ -16,8 +16,9 @@ import NotificationBar from '../composants/NotificationBar'
 import ChatBot from '../composants/ChatBot'
 import { Link } from 'react-router-dom';
 
-import drop from '../images/AKORE-img/Home/serum-drop_357492857.png'
+import drop from '../images/AKORE-img/Home/drop-flacon.png'
 import hyaluronic from '../images/AKORE-img/Home/serum-HYALURONIC-ACID.png'
+import liposomeSchema from '../images/AKORE-img/Home/liposome-schema.png'
 
 export default function Home() {
     const [showChat, setShowChat] = useState(false);
@@ -82,7 +83,7 @@ export default function Home() {
             </div>
             <div className='container-content-global-home'>
                 <div className='container-expert-content'>
-                    <img className='img-expert' alt='expert' src={drop} />
+                    <img className='img-drop' alt='expert' src={drop} />
                     <div className='container-text-expert-content'>
                         <h2 className='title-expert-content'>innovation and efficacity
                             at the heart of cosmetics </h2>
@@ -95,17 +96,34 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='container-liposome-advantage'>
-                    <img className='img-liposome-advantag' alt='avantages' src={imgAvantages} />
                     <div className='container-content-liposome-advantag'>
-                        <h2 className='title-liposome-advantag'>les avantages du liposome</h2>
-                        <p className='text-liposome-advantage'>L’un des principaux avantages des liposomes est leur capacité à améliorer la biodisponibilité
-                            des principes actifs.
-                            L’actif est encapsulé dans un liposome d’origine végétale, ce qui améliore considérablement
-                            son absorption au niveau cellulaire, leur transport ciblé dans l’organisme et renforce donc
-                            ses effets bénéfiques. Cette méthode de micro-encapsulation le protège également contre la
-                            dégradation précoce par les sucs gastriques, augmentant ainsi sa biodisponibilité et sa
-                            concentration dans le plasma sanguin.</p>
-                        <img className='img-schema-avantage' alt='avantages2' src={imgAvantages2} />
+                        <h2 className='title-liposome-advantag'>What’s a niosome ?</h2>
+                        <p className='home-p-desc'>
+                            Niosomes are non-ionic encapsulation systems designed to enhance the delivery of active ingredients to the skin.
+                            Thanks to their unique structure, they effectively encapsulate ingredients, enabling controlled release and improved skin penetration.
+                            The result is a significant increase in the efficacy of cosmetic products, while ensuring optimum protection of sensitive active ingredients.
+                        </p>
+                    </div>
+                    <img className='img-liposome-advantag' alt='avantages' src={liposomeSchema} />
+                </div>
+                <div className='container-liposome-advantage'>
+                    <div className='container-content-liposome-advantag'>
+                        <h2 className='title-liposome-advantag'>Our expertise</h2>
+                        <p className='home-p-desc'>
+                            Our laboratory is at the forefront of research and development in the field of niosomes.
+                            We work closely with experts in dermatology and cosmetic formulation to create products that meet the specific needs of our customers.
+                            Our development process incorporates the latest scientific advances to guarantee unprecedented results.
+                        </p>
+                    </div>
+                    <div className='container-content-liposome-advantag'>
+                        <h2 className='title-liposome-advantag'>Our commitments</h2>
+                        <p className='home-p-desc'>
+                            Innovation : We are committed to developing cutting-edge solutions that set new standards in the cosmetics industry.
+
+                            Quality : Each product is the result of in-depth research and rigorous quality control, ensuring safety and efficacy.
+
+                            Customisation : We offer tailor-made services to meet the unique requirements of each brand, enabling it to stand out from the crowd, from raw material to finished products
+                        </p>
                     </div>
                 </div>
                 <div className='container-shema-Vtab'>
@@ -163,10 +181,10 @@ export default function Home() {
                 </div>
             </div>
             <div className="app">
-                <div>
+                {/* <div>
                     <NotificationBar hisOpen={showChat} hasNotification={hasNotification} onClose={handleCloseChat} onClick={handleNotificationClick} style={notificationBarStyle} />
                     {showChat && <ChatBot hisOpen={showChat} onNewMessage={handleNewMessage} />}
-                </div>
+                </div> */}
             </div>
         </div>
     )

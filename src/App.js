@@ -37,7 +37,7 @@ export default function App() {
         <Route path="/matiere_premiere/detail/:productKey" element={<FicheProduitMP />} />
         <Route path='*' element={<Navigate to="/" />} />
       </Routes>
-      <ChatBotNotifBar/>
+      {/* <ChatBotNotifBar/> */}
       <Footer />
     </Router>
   );
