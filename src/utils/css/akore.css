@@ -51,4 +51,60 @@
 
 .home-p-desc{
     font-family: 'Poppins', sans-serif;
+    width: 430px;
+    font-size: 16px;
+}
+
+.home-p-desc-2{
+    font-family: 'Poppins', sans-serif;
+    width: 580px;
+}
+
+.title-liosome{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+}
+
+.akore-home-container-2{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.align-justified{
+    text-align: justify;
+}
+
+.icone-container-3{
+    height: 110px;
+    width: auto;
+}
+
+.akore-home-container-3{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.akore-home-icone-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.akore-home-icone-text h3{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #111426;
+    font-size: 20px;
+}
+.akore-home-icone-text img{
+    margin-bottom: 30px;
 }
