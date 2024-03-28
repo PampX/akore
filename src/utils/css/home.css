@@ -165,6 +165,11 @@ Link {
     width: 252px;
     height: 56px;
     border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.button-expert-content:hover{
+    background-color: #CE886D;
 }
 
 .button-expert-content-bis {

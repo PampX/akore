@@ -2,14 +2,15 @@
 .home-imgIntro{
     position: relative;
     width: 100%;
-    height: auto;
+    height: 809px;
 }
 .home-div-onImage {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     right: 10%;
     width: 718px;
+    /* max-width: 100%; */
 }
 
 .home-title-bold{
