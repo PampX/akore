@@ -86,6 +86,7 @@
 
 .akore-home-container-3{
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -107,4 +108,41 @@
 }
 .akore-home-icone-text img{
     margin-bottom: 30px;
+}
+
+.container-4-image-text {
+    position: relative;
+}
+
+.container-4-image-text img {
+    display: block; 
+    width: 100%; 
+    cursor: pointer;
+}
+
+.container-4-image-text div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-c4-h2{
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 64px;
+
+}
+.home-c4-h3{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #6D6869;
+    font-weight: 400;
+    font-size: 32px;
 }

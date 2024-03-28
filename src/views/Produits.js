@@ -15,10 +15,20 @@ export default function Produits() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
+
     return (
         <div className='container-all'>
             <div className='container-product-all'>
-                <div className='container-product-category'>
+                <div className='container-product-category' id='finishedProducts'>
                     <div className='item_in_product-category text_in_product_category'>
                         <h2 className='text'> FINISHED PRODUCTS </h2>
                         <p className='small-text text'>A selection of finished</p>
@@ -36,7 +46,7 @@ export default function Produits() {
                         </div>
                     ))}
                 </div>
-                <div className='container-product-category'>
+                <div className='container-product-category' id="rawMaterial">
                     <div className='item_in_product-category text_in_product_category'>
                         <h2 className='text'> RAW MATERIAL </h2>
                         <p className='small-text text'>A selection of raw</p>

@@ -2,18 +2,25 @@ import { useEffect, useState } from 'react';
 import '../utils/css/home.css';
 import '../utils/css/akore.css'
 import imgIntro from '../images/AKORE-img/Home/femme-desert.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import drop from '../images/AKORE-img/Home/drop-flacon.png'
 import liposomeSchema from '../images/AKORE-img/Home/liposome-schema.png'
+
 import icon1 from '../images/AKORE-img/Home/icon1.svg'
 import icon2 from '../images/AKORE-img/Home/icon2.svg'
 import icon3 from '../images/AKORE-img/Home/icon3.svg'
 import icon4 from '../images/AKORE-img/Home/icon4.svg'
 
+import fondMp from '../images/AKORE-img/Home/fond-MP.jpg'
+import fondProduits from '../images/AKORE-img/Home/fond-produits.jpg'
+
 export default function Home() {
+    const navigate = useNavigate()
 
-
+    const handleRedirect = (where)=>{
+        navigate(where)
+    }
     return (
         <div className='container-home'>
             <div className='container-intro-home'>
@@ -102,6 +109,22 @@ export default function Home() {
                         <img className='icone-container-3' alt='icone bouclier' src={icon4}/>
                         <h3>Biocompatibility,</h3>
                         <h3>& Skin-Friendly</h3>
+                    </div>
+                </div>
+                <div className='akore-home-container-4'>
+                    <div className='container-4-image-text' onClick={()=>(handleRedirect("/produits#finishedProducts"))}>
+                        <img alt='produits' src={fondProduits}/>
+                        <div>
+                            <h2 className='home-c4-h2'>FINISHED PRODUCTS</h2>
+                            <h3 className='home-c4-h3'>A selection of finished niosomal products</h3>
+                        </div>
+                    </div>
+                    <div className='container-4-image-text' onClick={()=>(handleRedirect("/produits#rawMaterial"))}>
+                        <img alt='matière première' src={fondMp}/>
+                        <div>
+                            <h2 className='home-c4-h2'>RAW MATERIALS</h2>
+                            <h3 className='home-c4-h3'>A selection of raw materials</h3>
+                        </div>
                     </div>
                 </div>
             </div>
