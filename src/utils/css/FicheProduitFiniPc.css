@@ -1,4 +1,9 @@
 /*general classes*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .text {
     font-family: 'poppins';
@@ -38,13 +43,13 @@
     max-width: 550px;
     border-radius: 3%;
     margin-top: 4%;
-    padding: 2% 0;
+    padding: 2% 2%;
+    width: 100%;
 }
 
 .check-line {
     display: flex;
     align-items: center;
-    margin-left: 3%;
 }
 
 .check-mark {
@@ -52,14 +57,78 @@
     margin: 0;
 }
 
+
 /* description block special css rules */
 
 #description-block {
     display: flex;
     justify-content: center;
     padding-top: 5%;
+    width: 70%;
+    max-width: 1224px;
 }
 
 #right-block {
     max-width: 900px;
+}
+
+
+/* benefits block special css rules */
+
+.benefits-block{
+    width: 70%;
+    max-width: 1224px;
+    padding-top: 5%;
+}
+
+.benefits-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-logos-title{
+    display: flex;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.benefits-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.benefits-description > div {
+    flex: 1; /*assure que les deux côtés font toujours la même taille*/
+    max-width: 45%;
+}
+
+.benefits-block .checkbox-square {
+    padding: 0 6% 10%;
+}
+
+.benefits-block .check-mark {
+    font-size: x-large;
+}
+
+.benefits-description h3 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    /*keep bold but less bold*/
+    font-weight: 600;
+}
+
+.benefits-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.benefits-description img {
+    margin-top: 6%;
+    width: 80%;
 }
