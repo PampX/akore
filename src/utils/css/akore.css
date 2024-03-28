@@ -2,7 +2,7 @@
 .home-imgIntro{
     position: relative;
     width: 100%;
-    height: 809px;
+    min-height: 565px;
 }
 .home-div-onImage {
     position: absolute;

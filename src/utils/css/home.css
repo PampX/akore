@@ -395,7 +395,7 @@ video{
 }
 
 /* version ecran normal */
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
 
     .img-expert{
         width: 45vw;
@@ -533,8 +533,8 @@ video{
     video{
         width: 800px;
     }
-}
-
+} */
+/* 
 @media (max-width: 1005px){
     .container-expert-content{
         display: flex;
@@ -553,17 +553,17 @@ video{
     .container-product{
         margin-top: 15px;
     }
-
+    
     .button-view-product{
         margin-top: 30px;
     }
-
+    
     video{
         width: 700px;
     }
 }
 
-/* version tablette */
+/* version tablette *//* 
 @media (max-width: 768px) {
     .img-intro-home{
         display: none;
@@ -805,7 +805,6 @@ video{
         text-align: center;
     }
 }
-
 @media (max-width: 321px) {
     .title-intro-home{
         font-size: 32px;
@@ -877,4 +876,5 @@ video{
     .button-expert-content::after{
         width: 182px;
     }
-}
+}  
+*/
