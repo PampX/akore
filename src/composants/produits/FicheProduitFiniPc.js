@@ -1,7 +1,8 @@
+import commonStyle from '../../utils/css/produits/ProductCommon.css'
 import '../../utils/css/produits/FicheProduitFiniPc.css'
 import ProductTripleList from "./ProductTripleList";
 
-export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
+export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
@@ -104,9 +105,9 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                 <div className='ingredients-image-background'>
                     <div className='ingredients-block'>
                         <ProductTripleList
-                            ingredientParagraph={"blaiboazozigazogezoygaigehafzev yegzaipugezaupagzepuaez aze auizeg azuipgaez azgazpiuazg piu"}
-                            HowToUseParagraphsArray={['qjQJKGDSQJKGSDQ', 'AJKRAHRZAHA']}
-                            PrecautionsParagraphsArray={['JFGFRZAUAZ ZIGAZE IPAGZ PIAZ ZAPIGAZEPI ZA PZAHAZ ZAIPHAZPIAZ ZAPZAH IZEH EZ OJH.']}
+                            ingredientParagraph={ingredientParagraph}
+                            howToUseParagraphsList={howToUseParagraphsList}
+                            precautionsParagraphsList={precautionsParagraphsList}
                         />
                     </div>
                 </div>

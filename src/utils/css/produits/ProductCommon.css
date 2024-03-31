@@ -1,0 +1,32 @@
+.text {
+    font-family: 'poppins', 'sans-serif';
+    color: #474748;
+    margin: 0;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.brown-text {
+    color: #CE886D;
+}
+
+.underligned {
+    border-bottom: 1px solid #ADB5BD;
+}
+
+.logo-and-image {
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.logo-and-image img {
+    max-height: 40px;
+    margin-right: 1%;
+}
+
+.pargraph {
+    margin-top: 2%;
+}
