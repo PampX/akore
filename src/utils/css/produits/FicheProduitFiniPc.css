@@ -151,7 +151,7 @@
 /* ingredients block special css rules */
 .ingredients-image-background {
     width: 100%;
-    background-image: url('../../images/AKORE WEBSITE/IMAGES/fond-creme.png');
+    background-image: url('../../../images/AKORE WEBSITE/IMAGES/fond-creme.png');
     min-height: 500px;
     background-size: cover;
     background-position: center;

@@ -1,4 +1,4 @@
-import '../../utils/css/produitCard.css';
+import '../../utils/css/produits/produitCard.css';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 

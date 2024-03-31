@@ -1,4 +1,4 @@
-import '../../utils/css/FicheProduitFiniPc.css'
+import '../../utils/css/produits/FicheProduitFiniPc.css'
 import ProductTripleList from "./ProductTripleList";
 
 export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
