@@ -126,9 +126,40 @@
     align-items: center;
 }
 
+.benefits-title img {
+    max-height: 40px;
+}
 
+.france-picto{
+    margin-right: 5%;
+}
+
+.benefits-title .logo-and-image {
+    padding: 0 2%;
+}
+
+.benefits-title .text {
+    padding: 0 4%;
+}
 
 .benefits-description img {
     margin-top: 6%;
     width: 80%;
+}
+
+/* ingredients block special css rules */
+.ingredients-image-background {
+    width: 100%;
+    background-image: url('../../images/AKORE WEBSITE/IMAGES/fond-creme.png');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*this block is not centered but a litle on the left of the page*/
+.ingredients-block {
+    width: 50%;
+    padding-top: 5%;
+    margin-left: 15%
 }

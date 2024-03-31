@@ -1,8 +1,18 @@
 import '../../utils/css/FicheProduitFiniPc.css'
+import plusPicto from "../../images/AKORE WEBSITE/PICTOS/plus.png";
 export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
     const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
-    const pipetteImage = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
+
+    const pipettePicto = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
+    const plusPicto = require('../../images/AKORE WEBSITE/PICTOS/plus.png')
+    const francePicto = require('../../images/AKORE WEBSITE/PICTOS/france.png')
+    const facePicto = require('../../images/AKORE WEBSITE/PICTOS/face.png')
+    const liposomePicto = require('../../images/AKORE WEBSITE/PICTOS/liposome.png')
+    const doctorPicto = require('../../images/AKORE WEBSITE/PICTOS/doctor.png')
+    const peoplePicto = require('../../images/AKORE WEBSITE/PICTOS/people.png')
+    const noticePicto = require('../../images/AKORE WEBSITE/PICTOS/notice.png')
+
     return (
             <div className='container'>
             {/*--------------- block description -------------------------*/}
@@ -12,7 +22,7 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                     <h1 className='text title'> {completeName} </h1>
                     <p className='text brown-text underligned'> {shortDesc} </p>
                     <div className='logo-and-image'>
-                        <img src={pipetteImage} alt={"logo pipette"}/>
+                        <img src={pipettePicto} alt={"logo pipette"}/>
                         <p className='text brown-text'>1 floz</p>
                     </div>
                     {paragraphsDescList.map((descParagraph, index) => { return (
@@ -35,20 +45,20 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                 <div className='benefits-block'>
                 <div className='benefits-title underligned'>
                     <div className='logo-and-image'>
-                        <img src={"signeplus"} alt={"logo plus"}/>
+                        <img src={plusPicto} alt={"logo plus"}/>
                         <h1 className='text title'>BENEFITS</h1>
                     </div>
                     <div className='benefits-logos-title'>
-                        <div className='logo-and-image small-text'>
-                            <img src={"france"} alt={"france"}/>
+                        <div className='logo-and-image small-text france-picto'>
+                            <img src={francePicto} alt={"france"}/>
                             <p className='text title'>FRENCH <br/> LABORATORY</p>
                         </div>
                         <div className='logo-and-image small-text'>
-                            <img src={"face"} alt={"face"}/>
+                            <img src={facePicto} alt={"face"}/>
                             <p className='text title'>FACE <br/> SERUM</p>
                         </div>
                         <div className='logo-and-image small-text'>
-                            <img src={"signeplus"} alt={"logo plus"}/>
+                            <img src={liposomePicto} alt={"logo liposome"}/>
                             <p className='text title'>100% <br/> NISOMALES ACTIVES</p>
                         </div>
                     </div>
@@ -88,8 +98,15 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                 </div>
 
                 {/*--------------- block ingredients -------------------------*/}
-                <div className='ingredients-block'>
-                    INGREDIENTS
+                <div className='ingredients-image-background'>
+                    <div className='ingredients-block'>
+                        <div className='benefits-title underligned'>
+                            <div className='logo-and-image'>
+                                <img src={doctorPicto} alt={"logo plus"}/>
+                                <h1 className='text title'>BENEFITS</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/*--------------- block other products -------------------------*/}
