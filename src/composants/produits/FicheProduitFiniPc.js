@@ -1,5 +1,6 @@
 import '../../utils/css/FicheProduitFiniPc.css'
-import plusPicto from "../../images/AKORE WEBSITE/PICTOS/plus.png";
+import ProductTripleList from "./ProductTripleList";
+
 export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
     const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
@@ -12,6 +13,8 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
     const doctorPicto = require('../../images/AKORE WEBSITE/PICTOS/doctor.png')
     const peoplePicto = require('../../images/AKORE WEBSITE/PICTOS/people.png')
     const noticePicto = require('../../images/AKORE WEBSITE/PICTOS/notice.png')
+    const expendedArrow = require('../../images/AKORE WEBSITE/PICTOS/expended.png')
+    const expendeMoreArrow = require('../../images/AKORE WEBSITE/PICTOS/expend-more.png')
 
     return (
             <div className='container'>
@@ -100,20 +103,19 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                 {/*--------------- block ingredients -------------------------*/}
                 <div className='ingredients-image-background'>
                     <div className='ingredients-block'>
-                        <div className='benefits-title underligned'>
-                            <div className='logo-and-image'>
-                                <img src={doctorPicto} alt={"logo plus"}/>
-                                <h1 className='text title'>BENEFITS</h1>
-                            </div>
-                        </div>
+                        <ProductTripleList
+                            ingredientParagraph={"blaiboazozigazogezoygaigehafzev yegzaipugezaupagzepuaez aze auizeg azuipgaez azgazpiuazg piu"}
+                            HowToUseParagraphsArray={['qjQJKGDSQJKGSDQ', 'AJKRAHRZAHA']}
+                            PrecautionsParagraphsArray={['JFGFRZAUAZ ZIGAZE IPAGZ PIAZ ZAPIGAZEPI ZA PZAHAZ ZAIPHAZPIAZ ZAPZAH IZEH EZ OJH.']}
+                        />
                     </div>
                 </div>
 
                 {/*--------------- block other products -------------------------*/}
                 <div className='other-products-block'>
-                OTHER PRODUCTS
+                    OTHER PRODUCTS
+                </div>
             </div>
-        </div>
 
     )
 }
