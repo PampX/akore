@@ -1,4 +1,15 @@
 /* AKORE */
+.container-intro-home {
+    width: 100%;
+    display: flex;
+}
+.container-home {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .home-imgIntro{
     position: relative;
     width: 100%;
@@ -146,4 +157,106 @@
     color: #6D6869;
     font-weight: 400;
     font-size: 32px;
+}
+
+.container-text-intro-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CE886D;
+    color: white;
+    flex-direction: column;
+    width: 100vw;
+    height: 165px;
+    font-size: 22px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.text-intro-background{
+    font-family: 'poppins';
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.container-content-global-home {
+    width: 100%;
+}
+
+.container-expert-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text-expert-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.title-expert-content {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'poppins';
+    color: #111426;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 480px;
+}
+
+.text-expert-content {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'poppins';
+    color: #6D6869;
+    line-height: 25.6px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.button-expert-content {
+    position: relative;
+    margin-top: 40px;
+    color: #121628;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ECB794;
+    width: 252px;
+    height: 56px;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.button-expert-content:hover{
+    background-color: #CE886D;
+}
+
+.img-drop {
+    width: 50%;
+    height: auto;
+}
+
+.container-liposome-advantage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.container-content-liposome-advantag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 430px;
 }
