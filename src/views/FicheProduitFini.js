@@ -23,6 +23,7 @@ export default function FicheProduitFini() {
                     shortDesc={product.shortDesc}
                     paragraphsDescList={product.paragraphsDescList}
                     checkboxDescList={product.checkboxDescList}
+                    ingredientsList={product.ingredientsList}
                     ingredientParagraph={product.ingredientParagraph}
                     howToUseParagraphsList={product.howToUseParagraphsList}
                     precautionsParagraphsList={product.precautionsParagraphsList}

@@ -1,8 +1,10 @@
 import commonStyle from '../../utils/css/produits/ProductCommon.css'
 import '../../utils/css/produits/FicheProduitFiniPc.css'
 import ProductTripleList from "./ProductTripleList";
+import L from "leaflet";
+import List from "./List";
 
-export default function FicheProduitFiniPc({imgName, completeName, shortDesc, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
+export default function FicheProduitFiniPc({imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
@@ -13,7 +15,7 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
     const liposomePicto = require('../../images/AKORE WEBSITE/PICTOS/liposome.png')
 
     return (
-            <div className='container'>
+        <div className='container'>
             {/*--------------- block description -------------------------*/}
             <div id='description-block'>
                 <img src={imageProduct} alt={imgName}/>
@@ -24,24 +26,28 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
                         <img src={pipettePicto} alt={"logo pipette"}/>
                         <p className='text brown-text'>1 floz</p>
                     </div>
-                    {paragraphsDescList.map((descParagraph, index) => { return (
+                    {paragraphsDescList.map((descParagraph, index) => {
+                        return (
                             <div className='pargraph text' key={index}>
                                 {descParagraph}
                             </div>
-                        )})}
+                        )
+                    })}
                     <div className='checkbox-square'>
-                        {checkboxDescList.map((checkText, index) => {return (
-                            <div className='check-line' key={index}>
-                                <p className='brown-text check-mark'> ✓ </p>
-                                <p className='text'> {checkText} </p>
-                            </div>
-                        )})}
+                        {checkboxDescList.map((checkText, index) => {
+                            return (
+                                <div className='check-line' key={index}>
+                                    <p className='brown-text check-mark'> ✓ </p>
+                                    <p className='text'> {checkText} </p>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </div>
 
-                {/*--------------- block benefits -------------------------*/}
-                <div className='benefits-block'>
+            {/*--------------- block benefits -------------------------*/}
+            <div className='benefits-block'>
                 <div className='benefits-title underligned'>
                     <div className='logo-and-image'>
                         <img src={plusPicto} alt={"logo plus"}/>
@@ -88,30 +94,33 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
 
                     </div>
                     <div className="benefits-right-block">
-                        <h2 className='text title'>NIOSOMAL TECHNOLOGY</h2>
-                        <p className='text'> ahhhhvalhvfalzhvflzhavfalzhvfzlahbvfhlazqvbfhlzbahlzlzb bazjrhvf zlhhflezhezlf azel ekza eklzgaezklgezeg zejghezmjkh ezmkaezh mjkzeheazmkjh ezkm</p>
-                    </div>
-                </div>
-                    <div className='benefits-ingredients'>
-                    </div>
-                </div>
-
-                {/*--------------- block ingredients -------------------------*/}
-                <div className='ingredients-image-background'>
-                    <div className='ingredients-block'>
-                        <ProductTripleList
-                            ingredientParagraph={ingredientParagraph}
-                            howToUseParagraphsList={howToUseParagraphsList}
-                            precautionsParagraphsList={precautionsParagraphsList}
+                        <List
+                            items={ingredientsList}
                         />
+                        <div>
+                            <p className={"underligned text"}> DISCOVER </p>
+                            <p className={"text"}>the complete composition</p>
+                        </div>
                     </div>
-                </div>
-
-                {/*--------------- block other products -------------------------*/}
-                <div className='other-products-block'>
-                    OTHER PRODUCTS
                 </div>
             </div>
+
+            {/*--------------- block ingredients -------------------------*/}
+            <div className='ingredients-image-background'>
+                <div className='ingredients-block'>
+                    <ProductTripleList
+                        ingredientParagraph={ingredientParagraph}
+                        howToUseParagraphsList={howToUseParagraphsList}
+                        precautionsParagraphsList={precautionsParagraphsList}
+                    />
+                </div>
+            </div>
+
+            {/*--------------- block other products -------------------------*/}
+            <div className='other-products-block'>
+                OTHER PRODUCTS
+            </div>
+        </div>
 
     )
 }
