@@ -1,4 +1,5 @@
 import commonStyles from  '../../utils/css/produits/ProductCommon.css'
+import commonListStyle from '../../utils/css/produits/commonList.css'
 import styles from '../../utils/css/produits/ProduitTripleList.css'
 import doctorPicto from "../../images/AKORE WEBSITE/PICTOS/doctor.png";
 import expendedArrow from "../../images/AKORE WEBSITE/PICTOS/expended.png";

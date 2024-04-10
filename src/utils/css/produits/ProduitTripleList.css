@@ -1,33 +1,3 @@
-.product-list-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3% 0;
-}
-
-.product-list-title:hover {
-    cursor: pointer;
-}
-
 .product-list-title > img {
     height: fit-content;
-}
-
-.product-list-title + div {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-
-    padding-left: 5%;
-    margin-bottom: 3%;
-}
-
-.selected + div {
-    max-height: 300px; /* Ajustez cette valeur en fonction de la hauteur de votre contenu */
-    transition: max-height 0.5s ease-in;
-}
-
-.selected, .selected .text {
-    color: #CE886D;
-    border-color: #CE886D;
 }
