@@ -97,7 +97,7 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, in
                         <List
                             items={ingredientsList}
                         />
-                        <div>
+                        <div className={"discover-compo"}>
                             <p className={"underligned text"}> DISCOVER </p>
                             <p className={"text"}>the complete composition</p>
                         </div>
