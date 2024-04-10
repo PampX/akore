@@ -11,11 +11,6 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, pa
     const francePicto = require('../../images/AKORE WEBSITE/PICTOS/france.png')
     const facePicto = require('../../images/AKORE WEBSITE/PICTOS/face.png')
     const liposomePicto = require('../../images/AKORE WEBSITE/PICTOS/liposome.png')
-    const doctorPicto = require('../../images/AKORE WEBSITE/PICTOS/doctor.png')
-    const peoplePicto = require('../../images/AKORE WEBSITE/PICTOS/people.png')
-    const noticePicto = require('../../images/AKORE WEBSITE/PICTOS/notice.png')
-    const expendedArrow = require('../../images/AKORE WEBSITE/PICTOS/expended.png')
-    const expendeMoreArrow = require('../../images/AKORE WEBSITE/PICTOS/expend-more.png')
 
     return (
             <div className='container'>
