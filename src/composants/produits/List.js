@@ -5,7 +5,7 @@ import expendeMoreArrow from "../../images/AKORE WEBSITE/PICTOS/expend-more.png"
 import {useState} from "react";
 
 /**
- * @param items est une liste d'objets de type : {tile: string[], paragraphs: string[]}
+ * @param items est une liste d'objets de type : {title: string, paragraphs: string[]}
  */
 export default function List({items}) {
 
@@ -20,7 +20,7 @@ export default function List({items}) {
                             className={'product-list-title underligned' + (selected === index ? ' selected' : '')}
                             onClick={() => setSelected(index)}
                         >
-                            <h3 className='text title'>Ingredients</h3>
+                            <h3 className='text title'> {item.title} </h3>
                             <img src={selected === index ? expendedArrow : expendeMoreArrow}/>
                         </div>
                         <div>
