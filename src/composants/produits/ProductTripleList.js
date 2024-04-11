@@ -20,7 +20,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
             >
                 <div className='logo-and-image'>
                     <img src={doctorPicto} alt={"logo plus"}/>
-                    <h3 className='text title'>Ingredients</h3>
+                    <h4 className='text title'>Ingredients</h4>
                 </div>
                 <img src={selected === 'ingredients' ? expendedArrow : expendeMoreArrow}/>
             </div>
@@ -35,7 +35,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
             >
                 <div className='logo-and-image'>
                     <img src={peoplePicto} alt={"logo plus"}/>
-                    <h3 className='text title'>How to use</h3>
+                    <h4 className='text title'>How to use</h4>
                 </div>
                 <img src={selected === 'how_to-use' ? expendedArrow : expendeMoreArrow}/>
             </div>
@@ -55,7 +55,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
             >
                 <div className='logo-and-image'>
                     <img src={noticePicto} alt={"logo plus"}/>
-                    <h3 className='text title'>Precautions for use</h3>
+                    <h4 className='text title'>Precautions for use</h4>
                 </div>
                 <img src={selected === 'precautions' ? expendedArrow : expendeMoreArrow}/>
             </div>
