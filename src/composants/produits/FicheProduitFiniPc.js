@@ -97,16 +97,16 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, in
                         <List
                             items={ingredientsList}
                         />
-                        <div className={"discover-compo"}>
+                        <a href="#ingredients" className={"discover-compo"}>
                             <p className={"underligned text"}> DISCOVER </p>
                             <p className={"text"}>the complete composition</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
             {/*--------------- block ingredients -------------------------*/}
-            <div className='ingredients-image-background'>
+            <div id="ingredients" className='ingredients-image-background'>
                 <div className='ingredients-block'>
                     <ProductTripleList
                         ingredientParagraph={ingredientParagraph}
