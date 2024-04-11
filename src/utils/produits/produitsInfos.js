@@ -25,10 +25,18 @@ export function getFinishedProductByKey(key){
     return finishedProducts.find(product => product.key === key);
 }
 
+export function getFinishedProductsExceptedOne(keyOfExcludedProduct){
+    return finishedProducts.filter(product => product.key !== keyOfExcludedProduct);
+}
+
 export function getRawProducts(){
     return rawProducts;
 }
 
 export function getRawProductByKey(key){
     return rawProducts.find(product => product.key === key);
+}
+
+export function getRawProductsExceptedOne(keyOfExcludedProduct){
+    return rawProducts.filter(product => product.key !== keyOfExcludedProduct);
 }
