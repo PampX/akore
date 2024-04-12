@@ -9,6 +9,7 @@ import Header from './composants/Header';
 import Footer from './composants/Footer';
 import ChatBotNotifBar from "./composants/ChatBotNotifBar";
 import FicheProduitMP from "./views/FicheProduitMP";
+import ScrollToTop from "./composants/ScrollToTop";
 
 // Initialisez votre ID de mesure GA4
 ReactGA.initialize('G-F61DD3NBNP');
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <Router>
       <RouteChangeTracker />
+        <ScrollToTop/>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
