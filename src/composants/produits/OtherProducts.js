@@ -1,3 +1,4 @@
+import commonStyle from "../../utils/css/produits/ProductCommon.css"
 import style from "../../utils/css/produits/otherProducts.css"
 import {getFinishedProductsExceptedOne, getRawProductsExceptedOne} from "../../utils/produits/produitsInfos";
 import ProduitCard from "./ProduitCard";
@@ -31,6 +32,7 @@ export default function OtherProducts({isRawProduct, keyOfProductToExclude}) {
                             imgName={product.imgName}
                             productKey={product.key}
                             isRowProduct={false}
+                            isSmall
                         />
                     )
                 })}

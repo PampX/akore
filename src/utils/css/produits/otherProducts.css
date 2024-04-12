@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+.other-products-container > .title {
+    padding-bottom: 3%;
+    width: 100%;
+}
+
 .products {
     width: 100%;
     display: flex;
