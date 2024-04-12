@@ -158,8 +158,3 @@
 .other-products-block {
     width: 85%;
 }
-
-.other-products-block > .title {
-    width: 100%;
-    text-align: center;
-}
