@@ -18,6 +18,7 @@ export default function FicheProduitFini() {
                 />
                 :
                 <FicheProduitFiniPc
+                    productKey={product.key}
                     imgName={product.imgName}
                     completeName={product.completeName}
                     shortDesc={product.shortDesc}

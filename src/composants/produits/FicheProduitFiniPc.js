@@ -3,8 +3,9 @@ import '../../utils/css/produits/FicheProduitFiniPc.css'
 import ProductTripleList from "./ProductTripleList";
 import L from "leaflet";
 import List from "./List";
+import OtherProducts from "./OtherProducts";
 
-export default function FicheProduitFiniPc({imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
+export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
@@ -125,7 +126,10 @@ export default function FicheProduitFiniPc({imgName, completeName, shortDesc, in
 
             {/*--------------- block other products -------------------------*/}
             <div className='other-products-block'>
-                OTHER PRODUCTS
+                <OtherProducts
+                    isRawProduct={false}
+                    keyOfProductToExclude={productKey}
+                />
             </div>
         </div>
 
