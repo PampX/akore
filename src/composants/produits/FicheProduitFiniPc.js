@@ -126,6 +126,8 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
 
             {/*--------------- block other products -------------------------*/}
             <div className='other-products-block'>
+                <h2 className='text title underligned'>DISCOVER OUR OTHER PRODUCTS</h2>
+
                 <OtherProducts
                     isRawProduct={false}
                     keyOfProductToExclude={productKey}
