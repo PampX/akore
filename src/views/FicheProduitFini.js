@@ -15,6 +15,16 @@ export default function FicheProduitFini() {
         <div>
             {isPhone ?
                 <FicheProduitFiniPhone
+                    productKey={product.key}
+                    imgName={product.imgName}
+                    completeName={product.completeName}
+                    shortDesc={product.shortDesc}
+                    paragraphsDescList={product.paragraphsDescList}
+                    checkboxDescList={product.checkboxDescList}
+                    ingredientsList={product.ingredientsList}
+                    ingredientParagraph={product.ingredientParagraph}
+                    howToUseParagraphsList={product.howToUseParagraphsList}
+                    precautionsParagraphsList={product.precautionsParagraphsList}
                 />
                 :
                 <FicheProduitFiniPc

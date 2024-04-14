@@ -1,3 +1,15 @@
 #right-block {
     max-width: 900px;
 }
+
+.phone > * {
+    margin-bottom: 5%;
+}
+
+.phone > .pargraph {
+    margin: 0;
+}
+
+.phone > .checkbox-square {
+    margin-top: 8%;
+}

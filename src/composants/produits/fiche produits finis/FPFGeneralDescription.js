@@ -1,16 +1,21 @@
 import commonStyle from '../../../utils/css/produits/ProductCommon.css'
+import style from '../../../utils/css/produits/fiche produits finis/FPFGeneralDescription.css'
+import {useMediaQuery} from "react-responsive";
 
 export default function FPFGeneralDescription({completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
     const pipettePicto = require('../../../images/AKORE WEBSITE/PICTOS/pipette.png')
+    const isPhone = useMediaQuery({query: '(max-width: 750px)'})
 
     return (
-        <div id='right-block'>
+        <div id='right-block' className={isPhone ? "phone" : ""}>
             <h1 className='text title'> {completeName} </h1>
             <p className='text brown-text underligned'> {shortDesc} </p>
-            <div className='logo-and-image'>
-                <img src={pipettePicto} alt={"logo pipette"}/>
-                <p className='text brown-text'>1 floz</p>
-            </div>
+            {isPhone ? "" : (
+                <div className='logo-and-image'>
+                    <img src={pipettePicto} alt={"logo pipette"}/>
+                    <p className='text brown-text'>1 floz</p>
+                </div>
+            )}
             {paragraphsDescList.map((descParagraph, index) => {
                 return (
                     <div className='pargraph text' key={index}>
