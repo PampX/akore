@@ -1,14 +1,14 @@
 import commonStyle from '../../../utils/css/produits/ProductCommon.css'
-import '../../../utils/css/produits/FicheProduitFiniPc.css'
+import '../../../utils/css/produits/fiche produits finis/FicheProduitFiniPc.css'
 import ProductTripleList from "../ProductTripleList";
 import List from "../List";
 import OtherProducts from "../OtherProducts";
+import FPFGeneralDescription from "./FPFGeneralDescription";
 
 export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
-    const pipettePicto = require('../../../images/AKORE WEBSITE/PICTOS/pipette.png')
     const plusPicto = require('../../../images/AKORE WEBSITE/PICTOS/plus.png')
     const francePicto = require('../../../images/AKORE WEBSITE/PICTOS/france.png')
     const facePicto = require('../../../images/AKORE WEBSITE/PICTOS/face.png')
@@ -19,31 +19,12 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
             {/*--------------- block description -------------------------*/}
             <div id='description-block'>
                 <img src={imageProduct} alt={imgName}/>
-                <div id='right-block'>
-                    <h1 className='text title'> {completeName} </h1>
-                    <p className='text brown-text underligned'> {shortDesc} </p>
-                    <div className='logo-and-image'>
-                        <img src={pipettePicto} alt={"logo pipette"}/>
-                        <p className='text brown-text'>1 floz</p>
-                    </div>
-                    {paragraphsDescList.map((descParagraph, index) => {
-                        return (
-                            <div className='pargraph text' key={index}>
-                                {descParagraph}
-                            </div>
-                        )
-                    })}
-                    <div className='checkbox-square'>
-                        {checkboxDescList.map((checkText, index) => {
-                            return (
-                                <div className='check-line' key={index}>
-                                    <p className='brown-text check-mark'> ✓ </p>
-                                    <p className='text'> {checkText} </p>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
+                <FPFGeneralDescription
+                    completeName={completeName}
+                    shortDesc={shortDesc}
+                    paragraphsDescList={paragraphsDescList}
+                    checkboxDescList={checkboxDescList}
+                />
             </div>
 
             {/*--------------- block benefits -------------------------*/}
