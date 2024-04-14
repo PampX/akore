@@ -1,8 +1,8 @@
 import {useMediaQuery} from 'react-responsive'
 import React from 'react';
 import {useParams} from 'react-router-dom';
-import FicheProduitFiniPhone from "../composants/produits/FicheProduitFiniPhone";
-import FicheProduitFiniPc from "../composants/produits/FicheProduitFiniPc";
+import FicheProduitFiniPhone from "../composants/produits/fiche produits finis/FicheProduitFiniPhone";
+import FicheProduitFiniPc from "../composants/produits/fiche produits finis/FicheProduitFiniPc";
 import {getFinishedProductByKey} from "../utils/produits/produitsInfos";
 
 export default function FicheProduitFini() {

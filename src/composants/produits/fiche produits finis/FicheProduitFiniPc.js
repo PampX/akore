@@ -1,19 +1,18 @@
-import commonStyle from '../../utils/css/produits/ProductCommon.css'
-import '../../utils/css/produits/FicheProduitFiniPc.css'
-import ProductTripleList from "./ProductTripleList";
-import L from "leaflet";
-import List from "./List";
-import OtherProducts from "./OtherProducts";
+import commonStyle from '../../../utils/css/produits/ProductCommon.css'
+import '../../../utils/css/produits/FicheProduitFiniPc.css'
+import ProductTripleList from "../ProductTripleList";
+import List from "../List";
+import OtherProducts from "../OtherProducts";
 
 export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
-    const imageProduct = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
-    const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
+    const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
+    const imageLiposome = require('../../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
-    const pipettePicto = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
-    const plusPicto = require('../../images/AKORE WEBSITE/PICTOS/plus.png')
-    const francePicto = require('../../images/AKORE WEBSITE/PICTOS/france.png')
-    const facePicto = require('../../images/AKORE WEBSITE/PICTOS/face.png')
-    const liposomePicto = require('../../images/AKORE WEBSITE/PICTOS/liposome.png')
+    const pipettePicto = require('../../../images/AKORE WEBSITE/PICTOS/pipette.png')
+    const plusPicto = require('../../../images/AKORE WEBSITE/PICTOS/plus.png')
+    const francePicto = require('../../../images/AKORE WEBSITE/PICTOS/france.png')
+    const facePicto = require('../../../images/AKORE WEBSITE/PICTOS/face.png')
+    const liposomePicto = require('../../../images/AKORE WEBSITE/PICTOS/liposome.png')
 
     return (
         <div className='container'>
