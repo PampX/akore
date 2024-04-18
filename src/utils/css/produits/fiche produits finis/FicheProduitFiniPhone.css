@@ -3,13 +3,13 @@
 }
 
 /* image and logos block css special rules*/
-.image-block {
+.image-block-phone {
     display: flex;
     align-items: flex-end;
     margin-bottom: 10%;
 }
 
-.image-block > img {
+.image-block-phone > img {
     max-width: 85%;
     /*pour contrer tout le blanc autour de l'image et se rapprocher du bord*/
     position: relative;
@@ -39,4 +39,14 @@
 .lipo-logo img{
     max-height: 35px;
     margin-right: 2%;
+}
+
+/* benefits block css special rules*/
+
+.benefits-block-phone {
+    width: 100%;
+}
+
+.benefits-block-phone > .logo-and-image > img {
+    margin-right: 5%;
 }

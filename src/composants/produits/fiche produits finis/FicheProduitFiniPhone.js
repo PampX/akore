@@ -1,9 +1,7 @@
 import style from '../../../utils/css/produits/fiche produits finis/FicheProduitFiniPhone.css'
 import FPFGeneralDescription from "./FPFGeneralDescription";
-import francePicto from "../../../images/AKORE WEBSITE/PICTOS/france.png";
-import facePicto from "../../../images/AKORE WEBSITE/PICTOS/face.png";
-import liposomePicto from "../../../images/AKORE WEBSITE/PICTOS/liposome.png";
-import pipettePicto from "../../../images/AKORE WEBSITE/PICTOS/pipette.png";
+import plusPicto from "../../../images/AKORE WEBSITE/PICTOS/plus.png";
+import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
 
 export default function FicheProduitFiniPhone ({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}){
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -14,7 +12,8 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
 
     return (
         <div className="container-FPF-phone">
-            <div className="image-block">
+            {/*--------------- block image -------------------------*/}
+            <div className="image-block-phone">
                 <img src={imageProduct} alt={imgName}/>
                 <div className="logos">
                     <div className='logo-and-image small-text'>
@@ -36,7 +35,8 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                 </div>
             </div>
 
-            <div className="desc-block">
+            {/*--------------- block description -------------------------*/}
+            <div className="desc-block-phone">
                 <FPFGeneralDescription
                     completeName={completeName}
                     shortDesc={shortDesc}
@@ -44,6 +44,16 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                     checkboxDescList={checkboxDescList}
                 />
             </div>
+
+            {/*--------------- block benefits -------------------------*/}
+            <div className='benefits-block-phone'>
+                <div className='logo-and-image underligned'>
+                    <img src={plusPicto} alt={"logo plus"}/>
+                    <h1 className='text title'>BENEFITS</h1>
+                </div>
+                <FPFCheckBoxBenefits/>
+            </div>
+
         </div>
     )
 }
