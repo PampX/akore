@@ -2,6 +2,7 @@ import style from '../../../utils/css/produits/fiche produits finis/FicheProduit
 import FPFGeneralDescription from "./FPFGeneralDescription";
 import plusPicto from "../../../images/AKORE WEBSITE/PICTOS/plus.png";
 import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
+import imageLiposome from "../../../images/AKORE WEBSITE/IMAGES/liposome.png";
 
 export default function FicheProduitFiniPhone ({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}){
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -9,6 +10,8 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
     const facePicto = require('../../../images/AKORE WEBSITE/PICTOS/face.png')
     const liposomePicto = require('../../../images/AKORE WEBSITE/PICTOS/liposome.png')
     const pipettePicto = require('../../../images/AKORE WEBSITE/PICTOS/pipette.png')
+
+    const imageLiposome = require('../../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
     return (
         <div className="container-FPF-phone">
@@ -52,6 +55,7 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                     <h1 className='text title'>BENEFITS</h1>
                 </div>
                 <FPFCheckBoxBenefits/>
+                <img src={imageLiposome} alt="liposome"/>
             </div>
 
         </div>

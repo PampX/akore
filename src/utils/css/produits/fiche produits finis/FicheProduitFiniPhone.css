@@ -50,3 +50,8 @@
 .benefits-block-phone > .logo-and-image > img {
     margin-right: 5%;
 }
+
+.benefits-block-phone > img {
+    max-width: 110%;
+    margin-top: 15%;
+}
