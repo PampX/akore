@@ -5,6 +5,7 @@ import List from "../List";
 import OtherProducts from "../OtherProducts";
 import FPFGeneralDescription from "./FPFGeneralDescription";
 import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
+import NiosomalTechnoParagraph from "../NiosomalTechnoParagraph";
 
 export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -66,13 +67,7 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
                         </a>
                     </div>
                 </div>
-                <div className="niosomal-techno">
-                    <h3 className='text title'>NIOSOMAL TECHNOLOGY®</h3>
-                    <p className="text pargraph">At Akore Formulations, we're revolutionizing the world of cosmetics through innovation and scientific expertise. We use niosome technology to push back the boundaries of cosmetic efficacy.</p>
-                    <p className="text pargraph">This non-ionic encapsulation system is designed to enhance the delivery of active ingredients to the skin. Thanks to their unique structure, they effectively encapsulate ingredients, enabling controlled release and better penetration into the skin.</p>
-                    <p className="text pargraph">The result is a significant increase in the efficacy of cosmetic products, while ensuring optimum protection of sensitive active ingredients. <br/>
-                        In collaboration with dermatology experts, we offer highly concentrated, premium-quality cosmetics.</p>
-                </div>
+                <NiosomalTechnoParagraph/>
             </div>
 
             {/*--------------- block ingredients -------------------------*/}
