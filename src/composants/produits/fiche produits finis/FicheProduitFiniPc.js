@@ -4,6 +4,7 @@ import ProductTripleList from "../ProductTripleList";
 import List from "../List";
 import OtherProducts from "../OtherProducts";
 import FPFGeneralDescription from "./FPFGeneralDescription";
+import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
 
 export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -51,26 +52,7 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
                 </div>
                 <div className='benefits-description'>
                     <div className="benefits-left-block">
-                        <div className='checkbox-square'>
-                            <h3 className='text title'>UNIQUE PREMIUM NIOSOME FORMULA</h3>
-                            <div className='check-line'>
-                                <p className='check-mark'> ✓ </p>
-                                <p className='text'> High concentration & assimilation </p>
-                            </div>
-                            <div className='check-line'>
-                                <p className='check-mark'> ✓ </p>
-                                <p className='text'> Fast-acting & long-lasting </p>
-                            </div>
-                            <h3 className='text title'>100% PURE & CLEAN</h3>
-                            <div className='check-line'>
-                                <p className='check-mark'> ✓ </p>
-                                <p className='text'>Fragrance-free</p>
-                            </div>
-                            <div className='check-line'>
-                                <p className='check-mark'> ✓ </p>
-                                <p className='text'>Not tested on animals - Non-irradiated</p>
-                            </div>
-                        </div>
+                        <FPFCheckBoxBenefits/>
                         <img src={imageLiposome} alt="liposome"/>
 
                     </div>
