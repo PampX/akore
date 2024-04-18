@@ -7,7 +7,7 @@ export default function FPFGeneralDescription({completeName, shortDesc, paragrap
     const isPhone = useMediaQuery({query: '(max-width: 750px)'})
 
     return (
-        <div id='right-block' className={isPhone ? "phone" : ""}>
+        <div id='right-block' className={isPhone ? "desc-phone" : ""}>
             <h1 className='text title'> {completeName} </h1>
             <p className='text brown-text underligned'> {shortDesc} </p>
             {isPhone ? "" : (

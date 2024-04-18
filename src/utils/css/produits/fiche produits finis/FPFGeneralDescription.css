@@ -2,14 +2,15 @@
     max-width: 900px;
 }
 
-.phone > * {
+.desc-phone > * {
     margin-bottom: 5%;
 }
 
-.phone > .pargraph {
+.desc-phone > .pargraph {
     margin: 0;
 }
 
-.phone > .checkbox-square {
+.desc-phone > .checkbox-square {
     margin-top: 8%;
+    padding-top: 8%;
 }
