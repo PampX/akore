@@ -81,17 +81,6 @@
     width: 80%;
 }
 
-.discover-compo{
-    display: flex;
-    margin-bottom: 5%;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.discover-compo .text{
-    margin-right: 2%;
-}
-
 .niosomal-techno{
     margin: 10% 0;
 }

@@ -1,3 +1,4 @@
+import style from '../utils/css/produits/fiche produits finis/FPFCommon.css'
 import {useMediaQuery} from 'react-responsive'
 import React from 'react';
 import {useParams} from 'react-router-dom';

@@ -1,0 +1,10 @@
+.discover-compo{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.discover-compo .text{
+    margin-right: 2%;
+}
