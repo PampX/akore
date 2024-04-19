@@ -139,68 +139,68 @@ Link {
     margin: 0 auto;
 } */
 
-.container-process{
+/* .container-process{
     display: flex;
     align-items: center;
     margin-top: 100px;
-}
+} */
 
-.img-liposome-content{
+/* .img-liposome-content{
     width: 55%;
     height: auto;
     padding-left: 60px;
     max-width: 1030px;
     max-height: 774px;
-}
+} */
 
-.title-liposome-content{
+/* .title-liposome-content{
     font-family: Poppins;
     font-weight: normal;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-}
+} */
 
-.text-liposome-content{
+/* .text-liposome-content{
     font-family: Poppins;
     color: #6D6869;
     text-align: justify;
-}
+} */
 
-.container-phospholipide{
+/* .container-phospholipide{
     display: flex;
     align-items: center;
     margin-top: 100px;
-}
+} */
 
-.img-phospholipide{
+/* .img-phospholipide{
     width: 38vw;
     height: auto;
     margin-right: 80px;
-}
+} */
 
-.container-text-phospholipide{
+/* .container-text-phospholipide{
     border-radius: 20px;
     background: #121628;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */
 
-.title-phospholipide{
+/* .title-phospholipide{
     font-family: Poppins;
     font-weight: normal;
     color: #99CFE2;
     font-size: 22px;
-}
+} */
 
-.text-phospholipide{
+/* .text-phospholipide{
     font-family: Poppins;
     color: white
-}
+} */
 
-.container-engagment{
+/* .container-engagment{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,28 +210,28 @@ Link {
     height: 80px;
     font-family: Poppins;
     font-size: 25px;
-}
+} */
 
-.container-products-global{
+/* .container-products-global{
     height: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
-.img-product{
+/* .img-product{
     width: 302px;
     height: 350px;
-}
+} */
 
-.container-product{
+/* .container-product{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     font-family: Poppins;
     align-items: center;
-}
+} */
 
-.title-product{
+/* .title-product{
     margin: 0;
     color: #1B1C3C;
     font-family: Poppins;
@@ -240,9 +240,9 @@ Link {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-}
+} */
 
-.text-product{
+/* .text-product{
     margin: 0;
     margin: 0;
     color: #1B1C3C;
@@ -250,10 +250,11 @@ Link {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal; 
 }
+*/
 
-.button-view-product {
+/* .button-view-product {
     position: relative;
     color: #121628;
     font-family: Poppins;
@@ -269,9 +270,9 @@ Link {
     margin-right: auto;
     display: block;
     width: 155px;
-}
+} */
 
-.button-view-product::after {
+/* .button-view-product::after {
     display: flex;
     content: '';
     position: absolute;
@@ -280,16 +281,16 @@ Link {
     width: 155px;
     height: 2px;
     background: #121628;
-}
+} */
 
-video{
+/* video{
     width: 1260px;
 }
 
 .container-video{
     display: flex;
     justify-content: center;
-}
+} */
 
 /* version ecran normal */
 /* @media (max-width: 1366px) {

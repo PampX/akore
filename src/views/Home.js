@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import '../utils/css/home.css';
 import '../utils/css/akore.css'
 import imgIntro from '../images/AKORE-img/Home/femme-desert.jpg';
 import { Link, useNavigate } from 'react-router-dom';
