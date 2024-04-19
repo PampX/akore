@@ -1,5 +1,6 @@
 /* AKORE */
 .container-intro-home {
+    position: relative;
     width: 100%;
     display: flex;
 }
@@ -369,5 +370,93 @@ OK 1400:1900
 
     .home-p-desc{
         width: auto;
+    }
+    .akore-home-c3-duo {
+        width: 100%;
+        justify-content: space-evenly;
+    } 
+    
+    .home-c-c4{
+        width: 500px;
+    }
+
+    .home-p-desc-2{
+        width: 100%;
+    }
+
+    .container-4-image-text div{
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width:300px) {
+    .container-expert-content{
+        flex-direction: column-reverse;
+    }
+    .container-liposome-advantage{
+        flex-direction: column;
+    }
+
+    .container-liposome-advantage2{
+        flex-direction: column;
+    }
+
+    .akore-home-container-3{
+        flex-direction: column;
+    }
+
+    .home-title,.home-title-bold{
+        font-size: 25px;
+    }
+    .home-p,.home-p-bold{
+        font-size: 18px;
+    }
+
+    .home-c4-h2{
+        font-size: 35px;
+    }
+    .home-c4-h3{
+        font-size: 20px;
+    }
+
+    .home-imgIntro{
+        min-height: auto;
+    }
+
+    .home-div-onImage{
+        width: 50%;
+    }
+
+    .container-text-expert-content{
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .img-drop{
+        width: 100%;
+    }
+
+    .container-content-liposome-advantag{
+        width: 100%;
+    }
+
+    .home-p-desc{
+        width: auto;
+    }
+    .akore-home-c3-duo {
+        width: 100%;
+        justify-content: space-evenly;
+    } 
+    
+    .home-c-c4{
+        width: 500px;
+    }
+
+    .home-p-desc-2{
+        width: 100%;
+    }
+
+    .container-4-image-text div{
+        top: 20px;
     }
 }

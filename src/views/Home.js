@@ -116,14 +116,14 @@ export default function Home() {
                 <div className='akore-home-container-4'>
                     <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#finishedProducts"))}>
                         <img alt='produits' src={fondProduits} />
-                        <div>
+                        <div className='home-c-c4'>
                             <h2 className='home-c4-h2'>FINISHED PRODUCTS</h2>
                             <h3 className='home-c4-h3'>A selection of finished niosomal products</h3>
                         </div>
                     </div>
                     <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#rawMaterial"))}>
                         <img alt='matière première' src={fondMp} />
-                        <div>
+                        <div className='home-c-c4'>
                             <h2 className='home-c4-h2'>RAW MATERIALS</h2>
                             <h3 className='home-c4-h3'>A selection of raw materials</h3>
                         </div>
