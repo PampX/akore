@@ -61,7 +61,7 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                 <img src={imageLiposome} alt="liposome"/>
             </div>
             <NiosomalTechnoParagraph/>
-            <a href="#ingredients" className={"discover-compo"}>
+            <a href="#ingredients-phone" className={"discover-compo"}>
                 <p className={"underligned text"}> DISCOVER </p>
                 <p className={"text"}>the complete composition</p>
             </a>

@@ -5,6 +5,14 @@
     margin: 3% 0;
 }
 
+.product-list-title > img {
+    height: fit-content;
+}
+
+.selected > img {
+    margin-right: 1%;
+}
+
 .product-list-title:hover {
     cursor: pointer;
 }
@@ -23,6 +31,10 @@
     transition: max-height 0.5s ease-in;
 }
 
+.selected + .small {
+    max-height: 500px; /* Ajustez la valeur en fonction de la longueur des paragraphs */
+}
+
 .selected, .selected .text {
     color: #CE886D;
     border-color: #CE886D;
@@ -31,5 +43,13 @@
 @media (max-width: 750px) {
     .selected + div {
         max-height: 1500px; /*paragraphs plus long en format téléphone (moins large)*/
+    }
+
+    .product-list-title > img {
+        max-height: 30px;
+    }
+
+    .selected > img {
+        max-height: 12px;
     }
 }

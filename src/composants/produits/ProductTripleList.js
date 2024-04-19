@@ -24,7 +24,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
                 </div>
                 <img src={selected === 'ingredients' ? expendedArrow : expendeMoreArrow}/>
             </div>
-            <div className={'text'}>
+            <div className={'text small'}>
                 {ingredientParagraph}
             </div>
 
@@ -39,7 +39,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
                 </div>
                 <img src={selected === 'how_to-use' ? expendedArrow : expendeMoreArrow}/>
             </div>
-            <div>
+            <div className='small'>
                 {howToUseParagraphsList.map((paragraph, index) => {
                     return (
                         <div className='pargraph text' key={index}>
@@ -59,7 +59,7 @@ export default function ProductTripleList({ingredientParagraph, howToUseParagrap
                 </div>
                 <img src={selected === 'precautions' ? expendedArrow : expendeMoreArrow}/>
             </div>
-            <div>
+            <div className='small'>
                 {precautionsParagraphsList.map((paragraph, index) => {
                     return (
                         <div className='pargraph text' key={index}
