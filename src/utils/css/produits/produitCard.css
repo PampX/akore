@@ -62,4 +62,8 @@
     .img-product-pres {
         height: auto;
     }
+
+    .small .text-product-product {
+        font-size: 20px;
+    }
 }

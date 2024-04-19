@@ -6,6 +6,7 @@ import imageLiposome from "../../../images/AKORE WEBSITE/IMAGES/liposome.png";
 import NiosomalTechnoParagraph from "../NiosomalTechnoParagraph";
 import ProductTripleList from "../ProductTripleList";
 import List from "../List";
+import OtherProducts from "../OtherProducts";
 
 export default function FicheProduitFiniPhone ({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}){
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -79,6 +80,14 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                         precautionsParagraphsList={precautionsParagraphsList}
                     />
                 </div>
+            </div>
+
+            {/*--------------- block other products -------------------------*/}
+            <div className='other-products-block'>
+                <OtherProducts
+                    isRawProduct={false}
+                    keyOfProductToExclude={productKey}
+                />
             </div>
 
         </div>

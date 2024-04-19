@@ -25,15 +25,17 @@ export default function OtherProducts({isRawProduct, keyOfProductToExclude}) {
             <div className="products">
                 {products.map((product, index) => {
                     return (
-                        <ProduitCard
-                            key={index}
-                            name={product.name}
-                            shortDesc={product.shortDesc}
-                            imgName={product.imgName}
-                            productKey={product.key}
-                            isRowProduct={false}
-                            isSmall
-                        />
+                        <div className='one-other-product'>
+                            <ProduitCard
+                                key={index}
+                                name={product.name}
+                                shortDesc={product.shortDesc}
+                                imgName={product.imgName}
+                                productKey={product.key}
+                                isRowProduct={false}
+                                isSmall
+                            />
+                        </div>
                     )
                 })}
             </div>
