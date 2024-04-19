@@ -19,11 +19,17 @@
 }
 
 .selected + div {
-    max-height: 1000px; /* Ajustez cette valeur en fonction de la hauteur de votre contenu */
+    max-height: 1000px; /* Ajustez la valeur en fonction de la longueur des paragraphs */
     transition: max-height 0.5s ease-in;
 }
 
 .selected, .selected .text {
     color: #CE886D;
     border-color: #CE886D;
+}
+
+@media (max-width: 750px) {
+    .selected + div {
+        max-height: 1500px; /*paragraphs plus long en format téléphone (moins large)*/
+    }
 }

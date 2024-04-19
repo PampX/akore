@@ -4,6 +4,8 @@ import plusPicto from "../../../images/AKORE WEBSITE/PICTOS/plus.png";
 import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
 import imageLiposome from "../../../images/AKORE WEBSITE/IMAGES/liposome.png";
 import NiosomalTechnoParagraph from "../NiosomalTechnoParagraph";
+import ProductTripleList from "../ProductTripleList";
+import List from "../List";
 
 export default function FicheProduitFiniPhone ({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}){
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
@@ -63,6 +65,10 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                 <p className={"underligned text"}> DISCOVER </p>
                 <p className={"text"}>the complete composition</p>
             </a>
+
+            <List
+                items={ingredientsList}
+            />
 
         </div>
     )
