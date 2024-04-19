@@ -70,6 +70,17 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
                 items={ingredientsList}
             />
 
+            {/*--------------- block ingredients -------------------------*/}
+            <div id="ingredients-phone">
+                <div className='liste-produits-phone'>
+                    <ProductTripleList
+                        ingredientParagraph={ingredientParagraph}
+                        howToUseParagraphsList={howToUseParagraphsList}
+                        precautionsParagraphsList={precautionsParagraphsList}
+                    />
+                </div>
+            </div>
+
         </div>
     )
 }
