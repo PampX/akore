@@ -16,7 +16,7 @@ import fondProduits from '../images/AKORE-img/Home/fond-produits.jpg'
 export default function Home() {
     const navigate = useNavigate()
 
-    const handleRedirect = (where)=>{
+    const handleRedirect = (where) => {
         navigate(where)
     }
     return (
@@ -61,7 +61,7 @@ export default function Home() {
                         </div>
                         <img className='akore-container-2-img' alt='avantages' src={liposomeSchema} />
                     </div>
-                    <div className='container-liposome-advantage'>
+                    <div className='container-liposome-advantage2'>
                         <div className='container-content-liposome-advantag'>
                             <h2 className='title-liosome'>Our expertise</h2>
                             <p className='home-p-desc align-justified'>
@@ -85,40 +85,44 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='akore-home-container-3'>
-                    <div className='akore-home-icone-text'>
-                        <img className='icone-container-3' alt='icone goutte' src={icon1} />
-                        <h3>Powerful,</h3>
-                        <h3>profound</h3>
-                        <h3>effectiveness</h3>
+                    <div className='akore-home-c3-duo'>
+                        <div className='akore-home-icone-text'>
+                            <img className='icone-container-3' alt='icone goutte' src={icon1} />
+                            <h3>Powerful,</h3>
+                            <h3>profound</h3>
+                            <h3>effectiveness</h3>
+                        </div>
+                        <div className='akore-home-icone-text'>
+                            <img className='icone-container-3' alt='icon molécule graphe' src={icon2} />
+                            <h3>Long-Lasting Action :</h3>
+                            <h3>Controlled </h3>
+                            <h3>& Prolonged Release,</h3>
+                        </div>
                     </div>
-                    <div className='akore-home-icone-text'>
-                        <img className='icone-container-3' alt='icon molécule graphe' src={icon2}/>
-                        <h3>Long-Lasting Action :</h3>
-                        <h3>Controlled </h3>
-                        <h3>& Prolonged Release,</h3>
-                    </div>
-                    <div className='akore-home-icone-text'>
-                        <img className='icone-container-3' alt='icone loupe plante' src={icon3}/>
-                        <h3>Optimum</h3>
-                        <h3>Stability of Active</h3>
-                        <h3>Ingredients</h3>
-                    </div>
-                    <div className='akore-home-icone-text'>
-                        <img className='icone-container-3' alt='icone bouclier' src={icon4}/>
-                        <h3>Biocompatibility,</h3>
-                        <h3>& Skin-Friendly</h3>
+                    <div className='akore-home-c3-duo'>
+                        <div className='akore-home-icone-text'>
+                            <img className='icone-container-3' alt='icone loupe plante' src={icon3} />
+                            <h3>Optimum</h3>
+                            <h3>Stability of Active</h3>
+                            <h3>Ingredients</h3>
+                        </div>
+                        <div className='akore-home-icone-text'>
+                            <img className='icone-container-3' alt='icone bouclier' src={icon4} />
+                            <h3>Biocompatibility,</h3>
+                            <h3>& Skin-Friendly</h3>
+                        </div>
                     </div>
                 </div>
                 <div className='akore-home-container-4'>
-                    <div className='container-4-image-text' onClick={()=>(handleRedirect("/produits#finishedProducts"))}>
-                        <img alt='produits' src={fondProduits}/>
+                    <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#finishedProducts"))}>
+                        <img alt='produits' src={fondProduits} />
                         <div>
                             <h2 className='home-c4-h2'>FINISHED PRODUCTS</h2>
                             <h3 className='home-c4-h3'>A selection of finished niosomal products</h3>
                         </div>
                     </div>
-                    <div className='container-4-image-text' onClick={()=>(handleRedirect("/produits#rawMaterial"))}>
-                        <img alt='matière première' src={fondMp}/>
+                    <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#rawMaterial"))}>
+                        <img alt='matière première' src={fondMp} />
                         <div>
                             <h2 className='home-c4-h2'>RAW MATERIALS</h2>
                             <h3 className='home-c4-h3'>A selection of raw materials</h3>

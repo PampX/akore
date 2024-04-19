@@ -247,7 +247,7 @@
     height: auto;
 }
 
-.container-liposome-advantage {
+.container-liposome-advantage, .container-liposome-advantage2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -261,5 +261,113 @@
     width: 430px;
 }
 
+.akore-home-c3-duo{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
 
 
+
+/* MEDIA QUERY */
+
+/*
+OK 1400:1900 
+*/
+
+@media screen and (max-width: 1400px) and (min-width:1000px) {
+    .container-liposome-advantage, .container-liposome-advantage2{
+        width: 90%;
+    }
+    .akore-container-2-img{
+        width: 50%;
+    }
+
+    .home-p-desc-2{
+        width: 100%;
+    }
+    .container-liposome-advantage2{
+        align-items: flex-start;
+    }
+
+    .home-div-onImage{
+        width: 50%;
+    }
+
+    .home-title,.home-title-bold{
+        font-size: 45px;
+    }
+    .home-p,.home-p-bold{
+        font-size: 25px;
+    }
+
+    .home-imgIntro{
+        min-height: auto;
+    }
+
+    .home-c4-h2{
+        font-size: 45px;
+    }
+    .home-c4-h3{
+        font-size: 25px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width:600px) {
+    .container-expert-content{
+        flex-direction: column-reverse;
+    }
+    .container-liposome-advantage{
+        flex-direction: column;
+    }
+
+    .container-liposome-advantage2{
+        flex-direction: column;
+    }
+
+    .akore-home-container-3{
+        flex-direction: column;
+    }
+
+    .home-title,.home-title-bold{
+        font-size: 35px;
+    }
+    .home-p,.home-p-bold{
+        font-size: 20px;
+    }
+
+    .home-c4-h2{
+        font-size: 35px;
+    }
+    .home-c4-h3{
+        font-size: 20px;
+    }
+
+    .home-imgIntro{
+        min-height: auto;
+    }
+
+    .home-div-onImage{
+        width: 50%;
+    }
+
+    .container-text-expert-content{
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .img-drop{
+        width: 100%;
+    }
+
+    .container-content-liposome-advantag{
+        width: 100%;
+    }
+
+    .home-p-desc{
+        width: auto;
+    }
+}
