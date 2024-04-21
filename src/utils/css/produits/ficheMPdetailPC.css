@@ -1,3 +1,49 @@
 .MP-image {
     max-height: 600px;
 }
+
+
+/* benefits block  */
+.benefits-block-MP{
+    width: 100%;
+    background-color: #e7e0db;
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5% 0;
+}
+
+/*permet de garder le texte par dessus l'image*/
+.benefits-block-MP * {
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-block-MP > img {
+    width: 22%;
+    position: absolute;
+    left: 60%;
+    z-index: 0;
+}
+
+.benefits-block-MP .logo-and-image > img {
+    max-height: 35px;
+    margin-right: 2%;
+}
+
+.benefits-MP {
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.discover-compo-MP {
+    display: flex;
+    text-decoration: none;
+    margin: 5% 0;
+}
+
+.discover-compo-MP p {
+    padding-bottom: 1%;
+    border-color: black;
+    margin-right: 1%;
+}

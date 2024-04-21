@@ -1,0 +1,12 @@
+.benefits-MP-check{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-MP-check .title {
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-weight: 400;
+    color: black;
+}
