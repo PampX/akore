@@ -1,9 +1,9 @@
-import commonStyle from '../../../utils/css/produits/ProductCommon.css'
-import style from '../../../utils/css/produits/fiche produits finis/FPFGeneralDescription.css'
+import commonStyle from '../../utils/css/produits/ProductCommon.css'
+import style from '../../utils/css/produits/FicheProduitGeneralDescription.css'
 import {useMediaQuery} from "react-responsive";
 
-export default function FPFGeneralDescription({completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
-    const pipettePicto = require('../../../images/AKORE WEBSITE/PICTOS/pipette.png')
+export default function FicheProduitGeneralDescription({completeName, shortDesc, paragraphsDescList, checkboxDescList}) {
+    const pipettePicto = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
     const isPhone = useMediaQuery({query: '(max-width: 750px)'})
 
     return (

@@ -3,7 +3,7 @@ import '../../../utils/css/produits/fiche produits finis/FicheProduitFiniPc.css'
 import ProductTripleList from "../ProductTripleList";
 import List from "../List";
 import OtherProducts from "../OtherProducts";
-import FPFGeneralDescription from "./FPFGeneralDescription";
+import FicheProduitGeneralDescription from "../FicheProduitGeneralDescription";
 import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
 import NiosomalTechnoParagraph from "../NiosomalTechnoParagraph";
 
@@ -21,7 +21,7 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
             {/*--------------- block description -------------------------*/}
             <div id='description-block'>
                 <img src={imageProduct} alt={imgName}/>
-                <FPFGeneralDescription
+                <FicheProduitGeneralDescription
                     completeName={completeName}
                     shortDesc={shortDesc}
                     paragraphsDescList={paragraphsDescList}

@@ -1,5 +1,5 @@
 import style from '../../../utils/css/produits/fiche produits finis/FicheProduitFiniPhone.css'
-import FPFGeneralDescription from "./FPFGeneralDescription";
+import FicheProduitGeneralDescription from "../FicheProduitGeneralDescription";
 import plusPicto from "../../../images/AKORE WEBSITE/PICTOS/plus.png";
 import FPFCheckBoxBenefits from "./FPFCheckBoxBenefits";
 import imageLiposome from "../../../images/AKORE WEBSITE/IMAGES/liposome.png";
@@ -44,7 +44,7 @@ export default function FicheProduitFiniPhone ({productKey, imgName, completeNam
 
             {/*--------------- block description -------------------------*/}
             <div className="desc-block-phone">
-                <FPFGeneralDescription
+                <FicheProduitGeneralDescription
                     completeName={completeName}
                     shortDesc={shortDesc}
                     paragraphsDescList={paragraphsDescList}
