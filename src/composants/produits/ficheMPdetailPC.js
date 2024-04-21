@@ -5,6 +5,7 @@ import ProductTripleList from "./ProductTripleList";
 import OtherProducts from "./OtherProducts";
 import FicheProduitGeneralDescription from "./FicheProduitGeneralDescription";
 import MPCheckBoxBenefits from "./MPCheckBoxBenefits";
+import List from "./List";
 
 export default function FicheMPdetailPC({
                                             productKey,
@@ -23,6 +24,9 @@ export default function FicheMPdetailPC({
 
     const plusPicto = require('../../images/AKORE WEBSITE/PICTOS/plus.png')
     const imageGoutte = require('../../images/AKORE WEBSITE/IMAGES/fiche-MP-goutte.png')
+
+    const femmeGris = require('../../images/AKORE WEBSITE/IMAGES/fille-MP-gris.jpg')
+    const imageCreme = require('../../images/AKORE WEBSITE/IMAGES/fond-creme-MP.png')
 
     return (
         <div className='container'>
@@ -48,21 +52,32 @@ export default function FicheMPdetailPC({
                         </div>
                     </div>
                     <MPCheckBoxBenefits/>
-                    <a href="#ingredients" className={"discover-compo-MP"}>
+                    <a href="#ingredients-MP" className={"discover-compo-MP"}>
                         <p className={"underligned text"}> DISCOVER </p>
                         <p className={"text"}>the complete composition</p>
                     </a>
                 </div>
             </div>
 
+            {/*--------------- block benefits list -------------------------*/}
+            <div className='benefits-list-block-MP'>
+                <img src={femmeGris}/>
+                <List
+                    items={benefitsList}
+                />
+            </div>
+
             {/*--------------- block ingredients -------------------------*/}
-            <div id="ingredients" className='ingredients-image-background'>
-                <div className='ingredients-block'>
-                    <ProductTripleList
-                        ingredientParagraph={ingredientParagraph}
-                        howToUseParagraphsList={howToUseParagraphsList}
-                        precautionsParagraphsList={precautionsParagraphsList}
-                    />
+            <div id="ingredients-MP" className='ingredients-image-background-MP'>
+                <div className='ingredients-block-MP'>
+                    <div className='tripleList-MP'>
+                        <ProductTripleList
+                            ingredientParagraph={ingredientParagraph}
+                            howToUseParagraphsList={howToUseParagraphsList}
+                            precautionsParagraphsList={precautionsParagraphsList}
+                        />
+                    </div>
+                    <img src={imageCreme}/>
                 </div>
             </div>
 

@@ -10,7 +10,7 @@
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 5% 0;
+    margin-top: 1% ;
 }
 
 /*permet de garder le texte par dessus l'image*/
@@ -46,4 +46,56 @@
     padding-bottom: 1%;
     border-color: black;
     margin-right: 1%;
+}
+
+
+/*benefits list*/
+.benefits-list-block-MP {
+    display: flex;
+    margin-right: 10%;
+}
+
+/*pour que l'animation soit adapté aux petits textes*/
+.benefits-list-block-MP .selected + div {
+    max-height: 300px; /* Ajustez la valeur en fonction de la longueur des paragraphs */
+}
+
+@media (max-width: 1400px) {
+    .benefits-list-block-MP {
+        margin-right: 0;
+    }
+}
+
+.benefits-list-block-MP .product-list-title {
+    margin: 0;
+}
+
+.benefits-list-block-MP .product-list-title .title {
+    color: #CE886D;
+    font-weight: 400;
+}
+
+.benefits-list-block-MP .selected .title{
+    font-weight: 700;
+}
+
+
+/*ingredients part*/
+#ingredients-MP {
+    background-color: #F4EEEA;
+}
+
+.ingredients-block-MP{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tripleList-MP {
+    margin-top: 1%;
+    width: 40%;
+}
+
+.ingredients-block-MP > img {
+    max-height: 500px;
+    margin: 0 5%;
 }
