@@ -6,6 +6,7 @@ import OtherProducts from "./OtherProducts";
 import FicheProduitGeneralDescription from "./FicheProduitGeneralDescription";
 import MPCheckBoxBenefits from "./MPCheckBoxBenefits";
 import List from "./List";
+import NiosomalTechnoParagraph from "./NiosomalTechnoParagraph";
 
 export default function FicheMPdetailPC({
                                             productKey,
@@ -81,10 +82,20 @@ export default function FicheMPdetailPC({
                 </div>
             </div>
 
+            {/*--------------- block Niosomal technology -------------------------*/}
+            <div className='niosomal-techno-MP'>
+                <img src={imageLiposome}/>
+                <div>
+                    <NiosomalTechnoParagraph/>
+                </div>
+
+            </div>
+
+
             {/*--------------- block other products -------------------------*/}
             <div className='other-products-block'>
                 <OtherProducts
-                    isRawProduct={false}
+                    isRawProduct={true}
                     keyOfProductToExclude={productKey}
                 />
             </div>

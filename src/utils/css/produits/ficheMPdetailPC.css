@@ -99,3 +99,25 @@
     max-height: 500px;
     margin: 0 5%;
 }
+
+
+/* niosomal technology part*/
+.niosomal-techno-MP {
+    display: flex;
+    align-items: center;
+    margin: 5% 10% 0;
+}
+
+.niosomal-techno-MP img {
+    max-height: 400px;
+}
+
+.niosomal-techno-MP div {
+    max-width: 75%;
+}
+
+@media (max-width: 1300px) {
+    .niosomal-techno-MP div {
+        max-width: 95%;
+    }
+}
