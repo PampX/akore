@@ -6,7 +6,7 @@ export default function FPFCheckBoxBenefits({}) {
     const isPhone = useMediaQuery({query: '(max-width: 750px)'})
 
     return (
-        <div className={isPhone?"checkbox-square checkbox-phone":"checkbox-square"}>
+        <div className={isPhone?"benefits checkbox-square checkbox-phone":"benefits checkbox-square"}>
             <h3 className='text title'>UNIQUE PREMIUM NIOSOME FORMULA</h3>
             <div className='check-line'>
                 <p className='check-mark'> ✓ </p>

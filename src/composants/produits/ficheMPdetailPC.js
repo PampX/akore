@@ -1,7 +1,7 @@
 import commonStyle from '../../utils/css/produits/ProductCommon.css'
+import style from '../../utils/css/produits/ficheMPdetailPC.css'
 import '../../utils/css/produits/fiche produits finis/FicheProduitFiniPc.css'
 import ProductTripleList from "./ProductTripleList";
-import List from "./List";
 import OtherProducts from "./OtherProducts";
 import FicheProduitGeneralDescription from "./FicheProduitGeneralDescription";
 import FPFCheckBoxBenefits from "./fiche produits finis/FPFCheckBoxBenefits";
@@ -20,7 +20,7 @@ export default function FicheMPdetailPC({productKey, imgName, name, shortDesc, p
         <div className='container'>
             {/*--------------- block description -------------------------*/}
             <div id='description-block'>
-                <img src={imageProduct} alt={imgName}/>
+                <img className='MP-image' src={imageProduct} alt={imgName}/>
                 <FicheProduitGeneralDescription
                     completeName={name+" NISOSOME SERUM"}
                     shortDesc={shortDesc}
