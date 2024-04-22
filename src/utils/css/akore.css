@@ -390,6 +390,27 @@ OK 1400:1900
 }
 
 @media screen and (max-width: 600px) and (min-width:300px) {
+    .akore-container-2-img{
+        width: 50%;
+    }
+
+    .title-expert-content{
+        width: auto;
+    }
+
+    .icone-container-3{
+        width: 100px;
+    }
+
+    .akore-home-icone-text h3{
+        font-size: 16px;
+    }
+
+    .home-c-c4{
+        width: auto;
+    }
+
+
     .container-expert-content{
         flex-direction: column-reverse;
     }
@@ -448,9 +469,6 @@ OK 1400:1900
         justify-content: space-evenly;
     } 
     
-    .home-c-c4{
-        width: 500px;
-    }
 
     .home-p-desc-2{
         width: 100%;

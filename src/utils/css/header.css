@@ -170,17 +170,12 @@ body{
         display: none;
     }
 }
-
+*/
 @media screen and (max-height: 650px){
-    .img-menu-liposome{
-        width: 180px;
-        height: auto;
+    .header-div-menu{
+        width: 100%;
     }
-
-    .container-menu-link{
-        margin-top: 30px;
-    }
-} */
+} 
 
 
 
