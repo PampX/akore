@@ -23,7 +23,7 @@ export default function MPCheckBoxBenefits({}) {
             </div>
             <div className='check-line'>
                 <p className='check-mark'> ✓ </p>
-                <p className='text'>Not tested on animals - Non-irradiated</p>
+                <p className='text last-MP-Check-Benefits'>Not tested on animals - Non-irradiated</p>
             </div>
         </div>
     )

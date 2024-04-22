@@ -1,0 +1,39 @@
+.container-FPF-phone-MP > * {
+    margin: 0 2%;
+
+}
+
+
+/* benefits */
+.benefits-block-phone-MP {
+    background-color: #E9E2DC;
+    margin: 0;
+    padding: 5% 0 5% 3%;
+}
+
+.benefits-block-phone-MP * {
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-block-phone-MP > img {
+    height: 35%;
+    position: absolute;
+    right: 0;
+    top: 1625px;
+    z-index: 0;
+}
+
+.benefits-block-phone-MP .discover-compo{
+    margin-bottom: 0;
+    justify-content: left;
+}
+
+.benefits-block-phone-MP .logo-and-image img {
+    margin-right: 5%;
+    max-height: 35px;
+}
+
+.last-MP-Check-Benefits {
+    max-width: 50%;
+}

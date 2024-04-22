@@ -4,6 +4,7 @@ import {useParams} from 'react-router-dom';
 import FicheProduitFiniPhone from "../composants/produits/fiche produits finis/FicheProduitFiniPhone";
 import {getRawProductByKey} from "../utils/produits/produitsInfos";
 import FicheMPdetailPC from "../composants/produits/ficheMPdetailPC";
+import FicheMPdetailPhone from "../composants/produits/FicheMPdetailPhone";
 
 export default function FicheProduitMP() {
     const params = useParams()
@@ -14,14 +15,14 @@ export default function FicheProduitMP() {
     return (
         <div>
             {isPhone ?
-                <FicheProduitFiniPhone
+                <FicheMPdetailPhone
                     productKey={product.key}
                     imgName={product.imgName}
-                    completeName={product.completeName}
+                    name={product.name}
                     shortDesc={product.shortDesc}
                     paragraphsDescList={product.paragraphsDescList}
                     checkboxDescList={product.checkboxDescList}
-                    ingredientsList={product.ingredientsList}
+                    benefitsList={product.benefitsList}
                     ingredientParagraph={product.ingredientParagraph}
                     howToUseParagraphsList={product.howToUseParagraphsList}
                     precautionsParagraphsList={product.precautionsParagraphsList}
