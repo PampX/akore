@@ -43,6 +43,17 @@
     margin-bottom: 8%;
 }
 
+/* benefits list */
+.benefits-list-MP-phone .title {
+    padding-bottom: 3%;
+}
+
+.benefits-list-MP-phone > div {
+    margin-bottom: 8%;
+}
+
+
+/* ingredients */
 #ingredients-phone-MP {
      background-color: #FEECDE;
      padding: 2%;

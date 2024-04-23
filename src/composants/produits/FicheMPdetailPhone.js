@@ -6,6 +6,8 @@ import List from "./List";
 import OtherProducts from "./OtherProducts";
 import MPCheckBoxBenefits from "./MPCheckBoxBenefits";
 import imageLiposome from "../../images/AKORE WEBSITE/IMAGES/liposome.png";
+import expendedArrow from "../../images/AKORE WEBSITE/PICTOS/expended.png";
+import expendeMoreArrow from "../../images/AKORE WEBSITE/PICTOS/expend-more.png";
 
 export default function FicheMPdetailPhone({
                                                productKey,
@@ -82,7 +84,24 @@ export default function FicheMPdetailPhone({
 
             <img className='img-femme-MP-phone' src={imageFemme}/>
 
-            <List items={benefitsList}/>
+            <div className='benefits-list-MP-phone'>
+                {benefitsList.map((item, index) => {
+                    return (
+                        <div key={index}>
+                            <h2 className='text title underligned brown-text'> {item.title} </h2>
+                            <div>
+                                {item.paragraphs.map((paragraph, index) => {
+                                    return (
+                                        <div className='pargraph text' key={index}>
+                                            {paragraph}
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
 
             {/*--------------- block ingredients -------------------------*/}
             <div id="ingredients-phone-MP">
