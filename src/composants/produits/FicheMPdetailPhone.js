@@ -115,8 +115,8 @@ export default function FicheMPdetailPhone({
             </div>
 
             {/*--------------- niosomal paragraph -------------------------*/}
-            <div>
-                {/*<img src={imageLiposome} alt="liposome"/>*/}
+            <div className='niosomal-phone-MP'>
+                <img src={imageLiposome} alt="liposome"/>
                 <NiosomalTechnoParagraph/>
             </div>
 
