@@ -6,21 +6,10 @@
 
 /* benefits */
 .benefits-block-phone-MP {
-    background-color: #E9E2DC;
+    background-image: url('../../../images/AKORE WEBSITE/IMAGES/fiche-MP-goutte-phone.png');
+    background-size: 100%;
+    background-position: right center;
     padding: 5% 0 5% 3%;
-}
-
-.benefits-block-phone-MP * {
-    position: relative;
-    z-index: 1;
-}
-
-.benefits-block-phone-MP > img {
-    height: 35%;
-    position: absolute;
-    right: 0;
-    top: 1625px;
-    z-index: 0;
 }
 
 .benefits-block-phone-MP .discover-compo{

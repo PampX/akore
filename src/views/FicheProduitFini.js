@@ -11,7 +11,7 @@ export default function FicheProduitFini() {
 
     const product = getFinishedProductByKey(params.productKey)
 
-    const isPhone = useMediaQuery({query: '(max-width: 750px)'})
+    const isPhone = useMediaQuery({query: '(max-width: 1000px)'})
     return (
         <div>
             {isPhone ?

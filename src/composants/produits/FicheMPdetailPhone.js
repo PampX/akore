@@ -28,7 +28,6 @@ export default function FicheMPdetailPhone({
     const pipettePicto = require('../../images/AKORE WEBSITE/PICTOS/pipette.png')
     const plusPicto = require("../../images/AKORE WEBSITE/PICTOS/plus.png")
 
-    const imageGoutte = require("../../images/AKORE WEBSITE/IMAGES/fiche-MP-goutte-phone.png")
     const imageFemme = require("../../images/AKORE WEBSITE/IMAGES/femme-MP-gris-phone.png")
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
@@ -69,7 +68,6 @@ export default function FicheMPdetailPhone({
 
             {/*--------------- block benefits -------------------------*/}
             <div className='benefits-block-phone-MP'>
-                <img src={imageGoutte}/>
                 <div className='logo-and-image'>
                     <img src={plusPicto} alt={"logo plus"}/>
                     <h1 className='text title'>BENEFITS</h1>
@@ -123,7 +121,7 @@ export default function FicheMPdetailPhone({
             {/*--------------- block other products -------------------------*/}
             <div className='other-products-block'>
                 <OtherProducts
-                    isRawProduct={false}
+                    isRawProduct={true}
                     keyOfProductToExclude={productKey}
                 />
             </div>

@@ -11,7 +11,7 @@ export default function FicheProduitMP() {
 
     const product = getRawProductByKey(params.productKey)
 
-    const isPhone = useMediaQuery({query: '(max-width: 750px)'})
+    const isPhone = useMediaQuery({query: '(max-width: 1000px)'})
     return (
         <div>
             {isPhone ?
