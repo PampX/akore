@@ -1,5 +1,5 @@
 .container-FPF-phone-MP > * {
-    margin: 0 2%;
+    padding: 0 2%;
 
 }
 
@@ -7,7 +7,6 @@
 /* benefits */
 .benefits-block-phone-MP {
     background-color: #E9E2DC;
-    margin: 0;
     padding: 5% 0 5% 3%;
 }
 
@@ -37,3 +36,14 @@
 .last-MP-Check-Benefits {
     max-width: 50%;
 }
+
+.img-femme-MP-phone {
+    width: 100vw;
+    padding: 0;
+    margin-bottom: 8%;
+}
+
+#ingredients-phone-MP {
+     background-color: #FEECDE;
+     padding: 2%;
+ }

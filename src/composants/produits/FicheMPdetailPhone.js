@@ -27,6 +27,7 @@ export default function FicheMPdetailPhone({
     const plusPicto = require("../../images/AKORE WEBSITE/PICTOS/plus.png")
 
     const imageGoutte = require("../../images/AKORE WEBSITE/IMAGES/fiche-MP-goutte-phone.png")
+    const imageFemme = require("../../images/AKORE WEBSITE/IMAGES/femme-MP-gris-phone.png")
     const imageLiposome = require('../../images/AKORE WEBSITE/IMAGES/liposome.png')
 
     return (
@@ -73,17 +74,19 @@ export default function FicheMPdetailPhone({
                 </div>
                 <MPCheckBoxBenefits/>
 
-                <a href="#ingredients-phone" className={"discover-compo"}>
+                <a href="#ingredients-phone-MP" className={"discover-compo"}>
                     <p className={"underligned text"}> DISCOVER </p>
                     <p className={"text"}>the complete composition</p>
                 </a>
             </div>
 
+            <img className='img-femme-MP-phone' src={imageFemme}/>
+
             <List items={benefitsList}/>
 
             {/*--------------- block ingredients -------------------------*/}
-            <div id="ingredients-phone">
-                <div className='liste-produits-phone'>
+            <div id="ingredients-phone-MP">
+                <div className='liste-produits-phone-MP'>
                     <ProductTripleList
                         ingredientParagraph={ingredientParagraph}
                         howToUseParagraphsList={howToUseParagraphsList}
