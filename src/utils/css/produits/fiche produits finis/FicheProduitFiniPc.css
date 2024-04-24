@@ -1,0 +1,118 @@
+/*general classes*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* description block special css rules */
+
+#description-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    width: 70%;
+    max-width: 1224px;
+}
+
+/* benefits block special css rules */
+
+.benefits-block{
+    width: 70%;
+    max-width: 1224px;
+    padding-top: 5%;
+}
+
+.benefits-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-logos-title{
+    display: flex;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.benefits-description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.benefits-description > div {
+    flex: 1; /*assure que les deux côtés font toujours la même taille*/
+    max-width: 45%;
+}
+
+.benefits-description h3 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    /*keep bold but less bold*/
+    font-weight: 600;
+}
+
+.benefits-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-title img {
+    max-height: 40px;
+}
+
+.france-picto{
+    margin-right: 5%;
+}
+
+.benefits-title .logo-and-image {
+    padding: 0 2%;
+}
+
+.benefits-title .text {
+    padding: 0 4%;
+}
+
+.benefits-left-block img {
+    margin-top: 6%;
+    width: 80%;
+}
+
+.niosomal-techno{
+    margin: 10% 0;
+}
+
+/* ingredients block special css rules */
+#ingredients {
+    background-color: #FEECDE;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+}
+
+#ingredients > img {
+    max-height: 500px;
+    max-width: 45vw;
+    margin: 0 5%;
+}
+
+
+.ingredients-block {
+    width: 40%;
+}
+
+/* other products block special rules */
+.other-products-block {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.other-products-block {
+    width: 85%;
+}

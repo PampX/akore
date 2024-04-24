@@ -1,4 +1,4 @@
-import '../../utils/css/listProduct.css'
+import '../../utils/css/produits/listProduct.css'
 import { useState, useEffect } from 'react';
 
 import antiStress from '../../images/general/molecules-anti-stress.png'

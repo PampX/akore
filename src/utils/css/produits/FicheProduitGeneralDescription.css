@@ -1,0 +1,16 @@
+#right-block {
+    max-width: 900px;
+}
+
+.desc-phone > * {
+    margin-bottom: 5%;
+}
+
+.desc-phone > .pargraph {
+    margin: 0;
+}
+
+.desc-phone > .checkbox-square {
+    margin-top: 8%;
+    padding-top: 8%;
+}

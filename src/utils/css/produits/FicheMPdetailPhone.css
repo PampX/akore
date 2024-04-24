@@ -1,0 +1,55 @@
+.container-FPF-phone-MP > * {
+    padding: 0 2%;
+
+}
+
+
+/* benefits */
+.benefits-block-phone-MP {
+    background-image: url('../../../images/AKORE WEBSITE/IMAGES/fiche-MP-goutte-phone.png');
+    background-size: 100%;
+    background-position: right center;
+    padding: 5% 0 5% 3%;
+}
+
+.benefits-block-phone-MP .discover-compo{
+    margin-bottom: 0;
+    justify-content: left;
+}
+
+.benefits-block-phone-MP .logo-and-image img {
+    margin-right: 5%;
+    max-height: 35px;
+}
+
+.last-MP-Check-Benefits {
+    max-width: 50%;
+}
+
+.img-femme-MP-phone {
+    width: 100vw;
+    padding: 0;
+    margin-bottom: 8%;
+}
+
+/* benefits list */
+.benefits-list-MP-phone .title {
+    padding-bottom: 3%;
+}
+
+.benefits-list-MP-phone > div {
+    margin-bottom: 8%;
+}
+
+
+/* ingredients */
+#ingredients-phone-MP {
+     background-color: #FEECDE;
+     padding: 2%;
+ }
+
+
+.niosomal-phone-MP img {
+    margin-top: 20%;
+    width: 90vw;
+}

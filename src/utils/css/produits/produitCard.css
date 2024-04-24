@@ -43,9 +43,27 @@
     margin: 0;
 }
 
+/* version small */
+.small {
+    margin: 3% 0;
+}
+
+.small .img-product-pres {
+    height: 220px;
+    margin-bottom: 8%;
+}
+
+.small .text-product-product{
+    width: min-content;
+}
+
 /* version telephone */
 @media (max-width: 441px) {
     .img-product-pres {
         height: auto;
+    }
+
+    .small .text-product-product {
+        font-size: 20px;
     }
 }

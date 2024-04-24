@@ -1,8 +1,8 @@
-import '../../utils/css/produitCard.css';
+import '../../utils/css/produits/produitCard.css';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
-export default function ProduitCard({name, shortDesc, imgName, productKey, isRowProduct}) {
+export default function ProduitCard({name, shortDesc, imgName, productKey, isRowProduct, isSmall=false}) {
     const navigate = useNavigate();
     const image = require(`../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const handleClick = () => {
@@ -15,7 +15,7 @@ export default function ProduitCard({name, shortDesc, imgName, productKey, isRow
 
     return (
             <div
-                className={`container-one-product`}
+                className={`container-one-product ${isSmall?"small":""}`}
                 onClick={() => handleClick()}
             >
                 <img className='img-product-pres' src={image} alt={name}/>

@@ -1,0 +1,120 @@
+.MP-image {
+    max-height: 600px;
+}
+
+
+/* benefits block  */
+.benefits-block-MP{
+    width: 100%;
+    background-color: #e7e0db;
+    margin-top: 1% ;
+}
+
+/*permet de garder le texte par dessus l'image*/
+.benefits-block-MP * {
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-block-MP > img {
+    width: 22%;
+    position: absolute;
+    left: 60%;
+    z-index: 0;
+}
+
+.benefits-block-MP .logo-and-image > img {
+    max-height: 35px;
+    margin-right: 2%;
+}
+
+.benefits-MP {
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.discover-compo-MP {
+    display: flex;
+    text-decoration: none;
+    margin: 5% 0;
+}
+
+.discover-compo-MP p {
+    padding-bottom: 1%;
+    border-color: black;
+    margin-right: 1%;
+}
+
+
+/*benefits list*/
+.benefits-list-block-MP {
+    display: flex;
+    margin-right: 10%;
+}
+
+/*pour que l'animation soit adapté aux petits textes*/
+.benefits-list-block-MP .selected + div {
+    max-height: 300px; /* Ajustez la valeur en fonction de la longueur des paragraphs */
+}
+
+@media (max-width: 1400px) {
+    .benefits-list-block-MP {
+        margin-right: 0;
+    }
+}
+
+.benefits-list-block-MP .product-list-title {
+    margin: 0;
+}
+
+.benefits-list-block-MP .product-list-title .title {
+    color: #CE886D;
+    font-weight: 400;
+}
+
+.benefits-list-block-MP .selected .title{
+    font-weight: 700;
+}
+
+
+/*ingredients part*/
+#ingredients-MP {
+    background-color: #F4EEEA;
+}
+
+.ingredients-block-MP{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tripleList-MP {
+    margin-top: 1%;
+    width: 40%;
+}
+
+.ingredients-block-MP > img {
+    max-height: 500px;
+    margin: 0 5%;
+}
+
+
+/* niosomal technology part*/
+.niosomal-techno-MP {
+    display: flex;
+    align-items: center;
+    margin: 5% 10% 0;
+}
+
+.niosomal-techno-MP img {
+    max-height: 400px;
+}
+
+.niosomal-techno-MP div {
+    max-width: 75%;
+}
+
+@media (max-width: 1300px) {
+    .niosomal-techno-MP div {
+        max-width: 95%;
+    }
+}

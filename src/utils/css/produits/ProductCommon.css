@@ -1,7 +1,5 @@
-/*general classes*/
-
 .text {
-    font-family: 'poppins';
+    font-family: 'poppins', 'sans-serif';
     color: #474748;
     margin: 0;
 }
@@ -33,33 +31,22 @@
     margin-top: 2%;
 }
 
+/* checkboxes */
 .checkbox-square {
     background: #F9F9F9;
     max-width: 550px;
     border-radius: 3%;
     margin-top: 4%;
-    padding: 2% 0;
+    padding: 2% 2%;
+    width: 100%;
 }
 
 .check-line {
     display: flex;
     align-items: center;
-    margin-left: 3%;
 }
 
 .check-mark {
     font-size: xx-large;
     margin: 0;
-}
-
-/* description block special css rules */
-
-#description-block {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-#right-block {
-    max-width: 900px;
 }

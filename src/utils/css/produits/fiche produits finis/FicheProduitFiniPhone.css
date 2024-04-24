@@ -1,0 +1,81 @@
+.container-FPF-phone {
+    margin: 0 4%;
+}
+
+/* image and logos block css special rules*/
+.image-block-phone {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
+}
+
+.image-block-phone > img {
+    max-width: 85%;
+    /*pour contrer tout le blanc autour de l'image et se rapprocher du bord*/
+    position: relative;
+    right: 55px;
+}
+
+.logos {
+    /*trop de blanc autour de l'image du produit donc il faut rogner dessus*/
+    position: relative;
+    right: 105px;
+    padding-bottom: 5%;
+}
+
+.logos > div {
+    margin-bottom: 15%;
+}
+
+.logo-and-image img {
+    max-height: 30px;
+    margin-right: 8%;
+}
+
+.face-logo{
+    padding-left: 5%;
+}
+
+.lipo-logo img{
+    max-height: 35px;
+    margin-right: 2%;
+}
+
+/* benefits block css special rules*/
+
+.benefits-block-phone {
+    width: 100%;
+}
+
+.benefits-block-phone > .logo-and-image > img {
+    margin-right: 5%;
+}
+
+.benefits-block-phone > img {
+    max-width: 100%;
+    margin-top: 15%;
+}
+
+.discover-compo {
+    margin: 20% 0;
+}
+
+/* ingredients */
+#ingredients-phone {
+    background-color: #FEECDE;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-top: 1%;
+    padding-bottom: 15%;
+}
+
+.liste-produits-phone {
+    margin-top: 20%;
+    margin-bottom: 15%;
+}

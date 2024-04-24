@@ -1,8 +1,11 @@
+
 import logo from '../images/AKORE-img/logo/Logo AKORE ocre.svg'
 import '../utils/css/footer.css'
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+
 export default function Footer() {
     const navigate = useNavigate();
+    const logoImage = require('../images/AKORE WEBSITE/LOGO/Logo AKORE ocre.png')
 
     const handleNavigate = (where) => {
         navigate(where)
