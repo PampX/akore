@@ -27,21 +27,20 @@ function RouteChangeTracker() {
 export default function App() {
 
   return (
-    <Router>
-      <RouteChangeTracker />
-        <ScrollToTop/>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/points-de-vente' element={<PDV />} />
-        <Route path='/produits' element={<Produits />} />
-        <Route path="/produit_fini/detail/:productKey" element={<FicheProduitFini />} />
-        <Route path="/matiere_premiere/detail/:productKey" element={<FicheProduitMP />} />
-        <Route path='*' element={<Navigate to="/" />} />
-      </Routes>
-      <ChatBotNotifBar/>
-      <Footer />
-    </Router>
+      <Router>
+          <RouteChangeTracker/>
+          <ScrollToTop/>
+          <Header/>
+          <Routes>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/points-de-vente' element={<PDV/>}/>
+              <Route path='/produits' element={<Produits/>}/>
+              <Route path="/produit_fini/detail/:productKey" element={<FicheProduitFini/>}/>
+              <Route path="/matiere_premiere/detail/:productKey" element={<FicheProduitMP/>}/>
+              <Route path='*' element={<Navigate to="/"/>}/>
+          </Routes>
+          <Footer/>
+      </Router>
   );
 }
 
