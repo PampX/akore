@@ -140,20 +140,22 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.logoOcre{
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* version mobile header */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header-p-menu{
         display:flex;
     }
 
-    .header-img-menu{
-        width: 175px;
-        height: 28px;
-    }
 
     .header-div-menu{
-        height: 50px;
+        height: 100px;
     }
 
     .header-img-phone{
@@ -170,7 +172,7 @@ body{
         display: none;
     }
 }
-*/
+
 @media screen and (max-width: 600px) and (min-width:300px) {
     .header-div-menu{
         width: 100%;
