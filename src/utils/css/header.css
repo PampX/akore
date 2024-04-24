@@ -141,6 +141,12 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.logoOcre{
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* version mobile header */
 @media screen and (max-width: 768px) {
@@ -148,13 +154,9 @@ body{
         display:flex;
     }
 
-    .header-img-menu{
-        width: 175px;
-        height: 28px;
-    }
 
     .header-div-menu{
-        height: 50px;
+        height: 100px;
     }
 
     .header-img-phone{
@@ -172,16 +174,14 @@ body{
     }
 }
 
-@media screen and (max-height: 650px){
-    .img-menu-liposome{
-        width: 180px;
-        height: auto;
+@media screen and (max-width: 600px) and (min-width:300px) {
+    .header-div-menu{
+        width: 100%;
     }
-
-    .container-menu-link{
-        margin-top: 30px;
+    header-p-menu{
+        font-size: 10px;
     }
-}
+} 
 
 
 
