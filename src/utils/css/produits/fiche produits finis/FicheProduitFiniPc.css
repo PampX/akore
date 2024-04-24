@@ -86,20 +86,22 @@
 }
 
 /* ingredients block special css rules */
-.ingredients-image-background {
-    width: 100%;
-    background-image: url('../../../../images/AKORE WEBSITE/IMAGES/fond-creme.png');
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#ingredients {
+    background-color: #FEECDE;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
 }
 
-/*this block is not centered but a litle on the left of the page*/
+#ingredients > img {
+    max-height: 500px;
+    max-width: 45vw;
+    margin: 0 5%;
+}
+
+
 .ingredients-block {
-    width: 50%;
-    padding-top: 5%;
-    margin-left: 15%
+    width: 40%;
 }
 
 /* other products block special rules */

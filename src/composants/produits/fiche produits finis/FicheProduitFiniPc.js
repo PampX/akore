@@ -10,6 +10,7 @@ import NiosomalTechnoParagraph from "../NiosomalTechnoParagraph";
 export default function FicheProduitFiniPc({productKey, imgName, completeName, shortDesc, ingredientsList, paragraphsDescList, checkboxDescList, ingredientParagraph, howToUseParagraphsList, precautionsParagraphsList}) {
     const imageProduct = require(`../../../images/AKORE WEBSITE/PRODUITS/${imgName}`)
     const imageLiposome = require('../../../images/AKORE WEBSITE/IMAGES/liposome.png')
+    const imageCreme = require("../../../images/AKORE WEBSITE/IMAGES/fond-creme.png")
 
     const plusPicto = require('../../../images/AKORE WEBSITE/PICTOS/plus.png')
     const francePicto = require('../../../images/AKORE WEBSITE/PICTOS/france.png')
@@ -71,7 +72,7 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
             </div>
 
             {/*--------------- block ingredients -------------------------*/}
-            <div id="ingredients" className='ingredients-image-background'>
+            <div id="ingredients">
                 <div className='ingredients-block'>
                     <ProductTripleList
                         ingredientParagraph={ingredientParagraph}
@@ -79,6 +80,7 @@ export default function FicheProduitFiniPc({productKey, imgName, completeName, s
                         precautionsParagraphsList={precautionsParagraphsList}
                     />
                 </div>
+                <img src={imageCreme}/>
             </div>
 
             {/*--------------- block other products -------------------------*/}
