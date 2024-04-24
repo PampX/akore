@@ -1,5 +1,8 @@
+import {useState, useEffect} from 'react'
+
 import '../utils/css/akore.css'
 import imgIntro from '../images/AKORE-img/Home/femme-desert.jpg';
+import imgIntroPhone from '../images/AKORE-img/Home/femme-desert-phone.png';
 import { Link, useNavigate } from 'react-router-dom';
 
 import drop from '../images/AKORE-img/Home/drop-flacon.png'
@@ -11,7 +14,9 @@ import icon3 from '../images/AKORE-img/Home/icon3.svg'
 import icon4 from '../images/AKORE-img/Home/icon4.svg'
 
 import fondMp from '../images/AKORE-img/Home/fond-MP.jpg'
+import fondMpPhone from '../images/AKORE-img/Home/fond-MP-phone.png'
 import fondProduits from '../images/AKORE-img/Home/fond-produits.jpg'
+import fondProduitsPhone from '../images/AKORE-img/Home/fond-produits-phone.png'
 
 export default function Home() {
     const navigate = useNavigate()
@@ -19,10 +24,30 @@ export default function Home() {
     const handleRedirect = (where) => {
         navigate(where)
     }
+
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div className='container-home'>
             <div className='container-intro-home'>
-                <img src={imgIntro} alt='femme' className='home-imgIntro' />
+                {windowWidth > 600 ? (
+                    <img src={imgIntro} alt='femme' className='home-imgIntro' />
+                ) : (
+                    <img src={imgIntroPhone} alt='femme' className='home-imgIntro' />
+                )}
+                
                 <div className='home-div-onImage'>
                     <h1 className='home-title-bold'>NIOSOMAL</h1>
                     <h1 className='home-title'>TECHNOLOGY</h1>
@@ -115,14 +140,22 @@ export default function Home() {
                 </div>
                 <div className='akore-home-container-4'>
                     <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#finishedProducts"))}>
-                        <img alt='produits' src={fondProduits} />
+                    {windowWidth > 600 ? (
+                        <img alt='matière première' src={fondProduits} />
+                        ) : (
+                        <img alt='matière première' src={fondProduitsPhone} />
+                        )}
                         <div className='home-c-c4'>
                             <h2 className='home-c4-h2'>FINISHED PRODUCTS</h2>
                             <h3 className='home-c4-h3'>A selection of finished niosomal products</h3>
                         </div>
                     </div>
                     <div className='container-4-image-text' onClick={() => (handleRedirect("/produits#rawMaterial"))}>
+                        {windowWidth > 600 ? (
                         <img alt='matière première' src={fondMp} />
+                        ) : (
+                        <img alt='matière première' src={fondMpPhone} />
+                        )}
                         <div className='home-c-c4'>
                             <h2 className='home-c4-h2'>RAW MATERIALS</h2>
                             <h3 className='home-c4-h3'>A selection of raw materials</h3>

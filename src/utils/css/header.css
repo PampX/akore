@@ -171,9 +171,12 @@ body{
     }
 }
 */
-@media screen and (max-height: 650px){
+@media screen and (max-width: 600px) and (min-width:300px) {
     .header-div-menu{
         width: 100%;
+    }
+    header-p-menu{
+        font-size: 10px;
     }
 } 
 
