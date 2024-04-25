@@ -17,46 +17,37 @@ Link {
     box-sizing: border-box;
   }  
 
-.container-shema-Vtab{
+/* .container-shema-Vtab{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.img-schema-avantage-mobile{
+/* .img-schema-avantage-mobile{
     height: auto;
     display: none;
     width: 50vw;
-}
+} */
 
-.container-home {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.container-intro-home {
-    width: 100%;
-    display: flex;
-}
 
-.img-intro-home {
+
+
+/* .img-intro-home {
     width: 50%;
     height: auto;
-}
+} */
 
-.container-intro-title-text {
+/* .container-intro-title-text {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 5%
-}
+} */
 
-.title-intro-home {
+/* .title-intro-home {
     font-size: 64px;
     margin: 0;
     font-family: 'poppins';
@@ -64,9 +55,9 @@ Link {
     color: #111426;
     text-transform: uppercase;
     line-height: 65px;
-}
+} */
 
-.text-intro-home {
+/* .text-intro-home {
     font-size: 34px;
     margin: 0;
     font-family: 'poppins';
@@ -74,99 +65,24 @@ Link {
     color: #111426;
     line-height: 40px;
     padding-top: 10px;
-}
+} */
 
-.container-text-intro-background{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #CE886D;
-    color: white;
-    flex-direction: column;
-    width: 100vw;
-    height: 165px;
-    font-size: 22px;
-    margin-bottom: 100px;
-    text-align: center;
-}
 
-.text-intro-background{
-    font-family: 'poppins';
-    margin: 0;
-    margin-bottom: 20px;
-}
 
-.title-intro-background{
+/* .title-intro-background{
     font-family: 'poppins';
     font-weight: 700; 
     margin: 0;
-}
+} */
 
-.rectangle {
+/* .rectangle {
     margin-top: 80px;
     width: 86px;
     height: 8px;
     background: #111426;
-}
+} */
 
-.container-content-global-home {
-    width: 1260px;
-}
-
-.container-expert-content {
-    display: flex;
-    padding-bottom: 100px;
-}
-
-.container-text-expert-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 50px;
-}
-
-.title-expert-content {
-    font-size: 30px;
-    margin: 0;
-    font-weight: 400;
-    font-family: 'poppins';
-    color: #111426;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 480px;
-}
-
-.text-expert-content {
-    font-size: 16px;
-    margin: 0;
-    font-family: 'poppins';
-    color: #6D6869;
-    line-height: 25.6px;
-    margin-top: 25px;
-    text-align: justify;
-}
-
-.button-expert-content {
-    position: relative;
-    margin-top: 40px;
-    color: #121628;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#ECB794;
-    width: 252px;
-    height: 56px;
-    border-radius: 50px;
-}
-
-.button-expert-content-bis {
+/* .button-expert-content-bis {
     position: relative;
     color: #121628;
     font-family: Poppins;
@@ -177,36 +93,21 @@ Link {
     text-transform: uppercase;
     text-decoration: none;
     text-decoration-color: #121628;
-}
+} */
 
 
-.img-expert {
-    width: 45vw;
+
+
+
+
+/* .img-liposome-advantag {
+    width: 650px;
     height: auto;
-    max-width: 595px;
-    max-height: 472px;
-}
+} */
 
-.container-liposome-advantage {
-    display: flex;
-    width: 100%;
-}
 
-.img-liposome-advantag {
-    width: 35vw;
-    height: auto;
-    margin-right: 80px;
-    max-width: 941px;
-    max-height: 891px;
-}
 
-.container-content-liposome-advantag {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.title-liposome-advantag {
+/* .title-liposome-advantag {
     color: #111426;
     font-family: Poppins;
     font-size: 30px;
@@ -218,10 +119,10 @@ Link {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
-}
+} */
 
-.text-liposome-advantage{
-    color: #6D6869;
+/* .text-liposome-advantage{
+    color: #000000;
     text-align: justify;
     font-family: Poppins;
     font-size: 16px;
@@ -229,77 +130,77 @@ Link {
     font-weight: 400;
     line-height: 25.6px;
     margin: 0;
-}
+} */
 
-.img-schema-avantage{
+/* .img-schema-avantage{
     width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
-}
+} */
 
-.container-process{
+/* .container-process{
     display: flex;
     align-items: center;
     margin-top: 100px;
-}
+} */
 
-.img-liposome-content{
+/* .img-liposome-content{
     width: 55%;
     height: auto;
     padding-left: 60px;
     max-width: 1030px;
     max-height: 774px;
-}
+} */
 
-.title-liposome-content{
+/* .title-liposome-content{
     font-family: Poppins;
     font-weight: normal;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-}
+} */
 
-.text-liposome-content{
+/* .text-liposome-content{
     font-family: Poppins;
     color: #6D6869;
     text-align: justify;
-}
+} */
 
-.container-phospholipide{
+/* .container-phospholipide{
     display: flex;
     align-items: center;
     margin-top: 100px;
-}
+} */
 
-.img-phospholipide{
+/* .img-phospholipide{
     width: 38vw;
     height: auto;
     margin-right: 80px;
-}
+} */
 
-.container-text-phospholipide{
+/* .container-text-phospholipide{
     border-radius: 20px;
     background: #121628;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */
 
-.title-phospholipide{
+/* .title-phospholipide{
     font-family: Poppins;
     font-weight: normal;
     color: #99CFE2;
     font-size: 22px;
-}
+} */
 
-.text-phospholipide{
+/* .text-phospholipide{
     font-family: Poppins;
     color: white
-}
+} */
 
-.container-engagment{
+/* .container-engagment{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,28 +210,28 @@ Link {
     height: 80px;
     font-family: Poppins;
     font-size: 25px;
-}
+} */
 
-.container-products-global{
+/* .container-products-global{
     height: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
-.img-product{
+/* .img-product{
     width: 302px;
     height: 350px;
-}
+} */
 
-.container-product{
+/* .container-product{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     font-family: Poppins;
     align-items: center;
-}
+} */
 
-.title-product{
+/* .title-product{
     margin: 0;
     color: #1B1C3C;
     font-family: Poppins;
@@ -339,9 +240,9 @@ Link {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-}
+} */
 
-.text-product{
+/* .text-product{
     margin: 0;
     margin: 0;
     color: #1B1C3C;
@@ -349,10 +250,11 @@ Link {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal; 
 }
+*/
 
-.button-view-product {
+/* .button-view-product {
     position: relative;
     color: #121628;
     font-family: Poppins;
@@ -368,9 +270,9 @@ Link {
     margin-right: auto;
     display: block;
     width: 155px;
-}
+} */
 
-.button-view-product::after {
+/* .button-view-product::after {
     display: flex;
     content: '';
     position: absolute;
@@ -379,26 +281,22 @@ Link {
     width: 155px;
     height: 2px;
     background: #121628;
-}
+} */
 
-video{
+/* video{
     width: 1260px;
 }
 
 .container-video{
     display: flex;
     justify-content: center;
-}
+} */
 
 /* version ecran normal */
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
 
     .img-expert{
         width: 45vw;
-    }
-
-    .container-home{
-        max-width: 1366px;
     }
 
     .container-liposome-advantage{
@@ -529,7 +427,8 @@ video{
     video{
         width: 800px;
     }
-}
+} */
+/* 
 
 @media (max-width: 1005px){
     .container-expert-content{
@@ -549,17 +448,17 @@ video{
     .container-product{
         margin-top: 15px;
     }
-
+    
     .button-view-product{
         margin-top: 30px;
     }
-
+    
     video{
         width: 700px;
     }
 }
 
-/* version tablette */
+/* version tablette *//* 
 @media (max-width: 768px) {
     .img-intro-home{
         display: none;
@@ -801,7 +700,6 @@ video{
         text-align: center;
     }
 }
-
 @media (max-width: 321px) {
     .title-intro-home{
         font-size: 32px;
@@ -873,4 +771,5 @@ video{
     .button-expert-content::after{
         width: 182px;
     }
-}
+}  
+*/

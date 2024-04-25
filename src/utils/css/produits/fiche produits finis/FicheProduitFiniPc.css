@@ -81,6 +81,10 @@
     width: 80%;
 }
 
+.benefits-right-block .selected + div {
+    max-height: 1500px; /* Ajustez la valeur en fonction de la longueur des paragraphs */
+}
+
 .niosomal-techno{
     margin: 10% 0;
 }
